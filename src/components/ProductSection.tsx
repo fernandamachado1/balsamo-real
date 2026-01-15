@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { Typography } from "antd";
 
 export function ProductSection() {
     return (
@@ -15,19 +16,19 @@ export function ProductSection() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="font-serif text-4xl md:text-5xl mb-8 text-[#2c2c2c]">
+                        <Typography.Title level={2} className="font-serif text-4xl md:text-5xl mb-8 text-[#2c2c2c] !mt-0">
                             O Produto
-                        </h2>
-                        <p className="text-lg text-[#4a4a4a] leading-relaxed mb-6 font-light">
-                            O <strong className="font-medium text-[#2c2c2c]">Bálsamo Real</strong>, produto 100% natural, é um
+                        </Typography.Title>
+                        <Typography.Paragraph className="text-lg text-[#4a4a4a] leading-relaxed mb-6 font-light">
+                            O <Typography.Text className="font-medium text-[#2c2c2c]">Bálsamo Real</Typography.Text>, produto 100% natural, é um
                             condicionador de couro. Ele hidrata, renova e protege o couro
                             naturalmente.
-                        </p>
-                        <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8 font-light">
+                        </Typography.Paragraph>
+                        <Typography.Paragraph className="text-lg text-[#4a4a4a] leading-relaxed mb-8 font-light">
                             O óleo de amêndoas e a manteiga de cacau hidratam profundamente as
                             fibras do couro, enquanto a cera de abelha cria uma proteção
                             superficial que rejuvenesce e realça as cores do seu artigo.
-                        </p>
+                        </Typography.Paragraph>
                         <Link href="/sobre-o-produto">
                             <motion.button
                                 className="border-b-2 border-black pb-1 text-sm uppercase tracking-widest hover:text-[#8B7355] hover:border-[#8B7355] transition-colors"
@@ -39,18 +40,28 @@ export function ProductSection() {
                     </motion.div>
 
                     <motion.div
-                        className="relative h-[500px] w-full bg-[#e0d5c1]"
+                        className="group"
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        {/* Placeholder for product detail image */}
-                        <img
-                            src="https://placehold.co/600x800/d4c5b0/333333?text=Detalhe+do+Produto"
-                            alt="Detalhe do Bálsamo Real"
-                            className="object-cover w-full h-full shadow-xl"
-                        />
+                        <div className="relative h-[500px] w-full bg-[#e0d5c1] overflow-hidden">
+                            <img
+                                src="/balsamo_1.jpg"
+                                alt="Detalhe do Bálsamo Real"
+                                className="object-cover w-full h-full shadow-xl transition-transform duration-500 group-hover:scale-[1.02]"
+                            />
+                            <div className="absolute inset-0 bg-black/30 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                            <div className="absolute inset-0 flex items-end justify-center p-6">
+                                <motion.button
+                                    className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.3em] font-medium text-white border-b-2 border-white pb-2"
+                                    whileHover={{ x: 6 }}
+                                >
+                                    Compre agora
+                                </motion.button>
+                            </div>
+                        </div>
                     </motion.div>
                 </div>
             </div>

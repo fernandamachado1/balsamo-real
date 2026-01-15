@@ -2,8 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Typography } from "antd";
 
 export function Hero() {
+    const MotionTitle = motion.create(Typography.Title);
+    const MotionParagraph = motion.create(Typography.Paragraph);
+
     return (
         <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
             {/* Background Image Placeholder */}
@@ -14,28 +18,30 @@ export function Hero() {
                         alt="Bálsamo Real Background"
                         className="object-cover w-full h-full"
                     />
-                    {/* Dark overlay for better text contrast */}
                     <div className="absolute inset-0 bg-black/30" />
                 </div>
             </div>
 
-            <div className="relative z-10 flex flex-col items-center text-center text-white px-4 mt-20">
-                <motion.h1
-                    className="font-serif text-5xl md:text-7xl lg:text-9xl tracking-wider mb-6 drop-shadow-lg text-white"
+            <div className="relative z-10 flex flex-col items-center text-center text-white">
+                <MotionTitle
+                    // level={1}
+                    className="font-serif text-5xl md:text-7xl lg:text-9xl tracking-wider mb-6 drop-shadow-lg !text-white !mt-0"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
+                    style={{ fontSize: 80 }}
                 >
                     BÁLSAMO REAL
-                </motion.h1>
-                <motion.p
-                    className="text-lg md:text-2xl font-light tracking-[0.2em] mb-12 drop-shadow-md text-gray-100 uppercase"
+                </MotionTitle>
+                <MotionParagraph
+                    className="text-lg md:text-2xl tracking-[0.2em] mb-12 drop-shadow-md !text-white"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.4 }}
+                    style={{ fontSize: 30, fontWeight: 400 }}
                 >
                     Hidratante e Condicionador <br /> de Couro
-                </motion.p>
+                </MotionParagraph>
 
                 <motion.button
                     className="bg-white text-black px-10 py-4 text-sm md:text-base font-medium tracking-[0.2em] uppercase hover:bg-gray-200 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1"
@@ -47,7 +53,6 @@ export function Hero() {
                 </motion.button>
             </div>
 
-            {/* Chat Widget Placeholder */}
             <motion.div
                 className="absolute bottom-8 right-8 z-20"
                 initial={{ scale: 0, opacity: 0 }}

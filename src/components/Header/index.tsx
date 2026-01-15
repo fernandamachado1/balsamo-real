@@ -34,7 +34,6 @@ export function Header() {
         {[
           { label: "Início", href: "/" },
           { label: "Loja", href: "/loja" },
-          { label: "Perto de você", href: "/perto" },
           { label: "Como usar", href: "/como-usar" },
           { label: "Sobre", href: "/sobre" },
           { label: "Contato", href: "/contato" },

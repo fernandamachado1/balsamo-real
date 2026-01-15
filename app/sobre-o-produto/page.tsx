@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react"; // Assuming lucide-react is available, or I'll use standard SVG
+import { Flex, Typography } from "antd";
 
 export default function ProductDetailsPage() {
+    const MotionTitle = motion.create(Typography.Title);
+
     return (
         <div className="min-h-screen bg-[#f4f1ea] py-24 px-8">
             <div className="max-w-4xl mx-auto">
@@ -15,60 +16,40 @@ export default function ProductDetailsPage() {
                     </svg>
                     Voltar para Home
                 </Link>
-
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <h1 className="font-serif text-5xl md:text-6xl text-[#2c2c2c] mb-12 leading-tight">
-                        A Essência do <br />
-                        <span className="text-[#8B7355]">Cuidado com Couro</span>
-                    </h1>
-                </motion.div>
-
-                <div className="space-y-24">
-                    {/* Section 1: Introduction */}
-                    <section className="grid md:grid-cols-2 gap-12 items-center">
-                        <motion.div
-                            initial={{ opacity: 0, x: -30 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.8 }}
-                            className="relative h-[400px] w-full bg-[#e0d5c1] rounded-lg overflow-hidden shadow-lg"
-                        >
+                <div className="space-y-18">
+                    <Flex gap={24}>
+                        <Flex>
                             <img
                                 src="https://placehold.co/600x800/d4c5b0/333333?text=Textura+Natural"
-                                alt="Textura e Aplicação"
+                                alt=""
                                 className="object-cover w-full h-full"
                             />
-                        </motion.div>
-                        <motion.div
-                            initial={{ opacity: 0, x: 30 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.8, delay: 0.2 }}
+                        </Flex>
+                        <Flex
+                           vertical
+                           
                         >
-                            <h2 className="font-serif text-3xl text-[#2c2c2c] mb-6">Renovação Natural</h2>
-                            <p className="text-lg text-[#4a4a4a] leading-relaxed font-light mb-4">
-                                O Bálsamo Real não é apenas um produto de limpeza, é um tratamento de rejuvenescimento para seus itens mais estimados. Desenvolvido com uma mistura exclusiva de ingredientes 100% naturais.
-                            </p>
-                            <p className="text-lg text-[#4a4a4a] leading-relaxed font-light">
-                                A combinação perfeita de cera de abelha, óleo de amêndoas e manteiga de cacau garante que o couro respire, mantendo-se flexível e resistente ao tempo.
-                            </p>
-                        </motion.div>
-                    </section>
+                            <Typography.Title level={2} className="font-serif text-3xl text-[#2c2c2c] mb-6 !mt-0">
+                               NOSSA HISTÓRIA E FILOSOFIA
+                            </Typography.Title>
+                            <Typography.Paragraph className="text-lg text-[#4a4a4a] leading-relaxed font-light mb-4">
+                              Nascemos da necessidade de um produto 100% natural e que atenda à quem produz ou consome artigos em couro, seja calçados, móveis, carteiras, bolsas, jaquetas ou qualquer acessório feito nesse material nobre.
+                            </Typography.Paragraph>
+                            <Typography.Paragraph className="text-lg text-[#4a4a4a] leading-relaxed font-light">
+                                Somos resultado do conhecimento de 6 artesãos com experiência na arte de produzir e cuidar de artigos em couro.
+                            </Typography.Paragraph>
+                             <Typography.Paragraph className="text-lg text-[#4a4a4a] leading-relaxed font-light">
+                              Usamos ingredientes locais de altissima qualidade, buscando entregar o melhor condicionador natural para couro.
+                            </Typography.Paragraph>
+                        </Flex>
+                    </Flex>
 
-                    {/* Section 2: Benefits */}
                     <section>
-                        <motion.h2
-                            className="font-serif text-3xl text-[#2c2c2c] mb-12 text-center"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                        <Flex
+                          
                         >
                             Benefícios Exclusivos
-                        </motion.h2>
+                        </Flex>
                         <div className="grid md:grid-cols-3 gap-8">
                             {[
                                 { title: "Hidratação Profunda", desc: "Penetra nas fibras do couro, prevenindo rachaduras e ressecamento." },
@@ -83,8 +64,12 @@ export default function ProductDetailsPage() {
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.2 }}
                                 >
-                                    <h3 className="font-serif text-xl text-[#8B7355] mb-4">{item.title}</h3>
-                                    <p className="text-[#4a4a4a] font-light leading-relaxed">{item.desc}</p>
+                                    <Typography.Title level={3} className="font-serif text-xl text-[#8B7355] mb-4 !mt-0">
+                                        {item.title}
+                                    </Typography.Title>
+                                    <Typography.Paragraph className="text-[#4a4a4a] font-light leading-relaxed mb-0">
+                                        {item.desc}
+                                    </Typography.Paragraph>
                                 </motion.div>
                             ))}
                         </div>
@@ -98,23 +83,33 @@ export default function ProductDetailsPage() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <h2 className="font-serif text-3xl mb-8 text-[#e0d5c1]">Ritual de Aplicação</h2>
+                                <Typography.Title level={2} className="font-serif text-3xl mb-8 text-[#e0d5c1] !mt-0">
+                                    Ritual de Aplicação
+                                </Typography.Title>
                                 <ol className="space-y-6 font-light">
                                     <li className="flex gap-4">
-                                        <span className="text-[#8B7355] font-serif text-xl">01</span>
-                                        <p>Limpe a superfície do couro com um pano seco para remover a poeira.</p>
+                                        <Typography.Text className="text-[#8B7355] font-serif text-xl">01</Typography.Text>
+                                        <Typography.Paragraph className="mb-0">
+                                            Limpe a superfície do couro com um pano seco para remover a poeira.
+                                        </Typography.Paragraph>
                                     </li>
                                     <li className="flex gap-4">
-                                        <span className="text-[#8B7355] font-serif text-xl">02</span>
-                                        <p>Com uma esponja ou pano macio, aplique uma pequena quantidade do bálsamo.</p>
+                                        <Typography.Text className="text-[#8B7355] font-serif text-xl">02</Typography.Text>
+                                        <Typography.Paragraph className="mb-0">
+                                            Com uma esponja ou pano macio, aplique uma pequena quantidade do bálsamo.
+                                        </Typography.Paragraph>
                                     </li>
                                     <li className="flex gap-4">
-                                        <span className="text-[#8B7355] font-serif text-xl">03</span>
-                                        <p>Espalhe em movimentos circulares até que o produto seja absorvido.</p>
+                                        <Typography.Text className="text-[#8B7355] font-serif text-xl">03</Typography.Text>
+                                        <Typography.Paragraph className="mb-0">
+                                            Espalhe em movimentos circulares até que o produto seja absorvido.
+                                        </Typography.Paragraph>
                                     </li>
                                     <li className="flex gap-4">
-                                        <span className="text-[#8B7355] font-serif text-xl">04</span>
-                                        <p>Aguarde alguns minutos e dê o polimento final com um pano limpo.</p>
+                                        <Typography.Text className="text-[#8B7355] font-serif text-xl">04</Typography.Text>
+                                        <Typography.Paragraph className="mb-0">
+                                            Aguarde alguns minutos e dê o polimento final com um pano limpo.
+                                        </Typography.Paragraph>
                                     </li>
                                 </ol>
                             </motion.div>
