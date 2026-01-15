@@ -1,13 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
 import { Typography } from "antd";
 
 export function ProductSection() {
     return (
-        <section className="py-24 px-8 bg-[#f4f1ea] overflow-hidden">
+        <section id="loja" className="py-24 px-8 bg-[#f4f1ea] overflow-hidden">
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <motion.div
@@ -29,14 +27,14 @@ export function ProductSection() {
                             fibras do couro, enquanto a cera de abelha cria uma proteção
                             superficial que rejuvenesce e realça as cores do seu artigo.
                         </Typography.Paragraph>
-                        <Link href="/sobre-o-produto">
+                        <a href="#sobre">
                             <motion.button
                                 className="border-b-2 border-black pb-1 text-sm uppercase tracking-widest hover:text-[#8B7355] hover:border-[#8B7355] transition-colors"
                                 whileHover={{ x: 10 }}
                             >
                                 Saiba mais
                             </motion.button>
-                        </Link>
+                        </a>
                     </motion.div>
 
                     <motion.div

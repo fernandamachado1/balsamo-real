@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Typography } from "antd";
 
@@ -9,7 +8,7 @@ export function Hero() {
     const MotionParagraph = motion.create(Typography.Paragraph);
 
     return (
-        <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <section id="inicio" className="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
             {/* Background Image Placeholder */}
             <div className="absolute inset-0 z-0">
                 <div className="w-full h-full bg-[#d4c5b0] relative">

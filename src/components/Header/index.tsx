@@ -32,20 +32,20 @@ export function Header() {
 
       <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-800 tracking-wide">
         {[
-          { label: "Início", href: "/" },
-          { label: "Loja", href: "/loja" },
-          { label: "Como usar", href: "/como-usar" },
-          { label: "Sobre", href: "/sobre" },
-          { label: "Contato", href: "/contato" },
+          { label: "Início", href: "#inicio" },
+          { label: "Loja", href: "#loja" },
+          { label: "Como usar", href: "#como-usar" },
+          { label: "Sobre", href: "#sobre" },
+          { label: "Contato", href: "#contato" },
         ].map((link) => (
-          <Link
+          <a
             key={link.href}
             href={link.href}
             className="relative group hover:text-black transition-colors"
           >
             {link.label}
             <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full" />
-          </Link>
+          </a>
         ))}
       </nav>
 
