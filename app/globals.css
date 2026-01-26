@@ -1,8 +1,24 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Colus";
+  src: url("/Colus-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosley";
+  src: url("/Mosley%20Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
+  --font-sans: "Colus", serif;
+  --font-serif: "Mosley", serif;
 }
 
 :root {
@@ -19,6 +35,25 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.ant-typography-title {
+  font-family: var(--font-serif);
+}
+
+.ant-typography {
+  font-family: var(--font-sans) !important;
+}
+
+.ant-typography-title {
+  font-family: var(--font-serif) !important;
+}
+
 
 section[id] {
   scroll-margin-top: 96px;
