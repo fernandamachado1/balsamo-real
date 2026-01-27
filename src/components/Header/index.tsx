@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ShoppingBag, User } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { Button, Typography } from "antd";
+import { Typography } from "antd";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +34,7 @@ export function Header() {
           alt="Bálsamo Real"
           width={56}
           height={56}
-          className="h-8 w-10 md:h-22 md:w-22 object-contain"
+          className="h-8 w-10 md:h-12 md:w-12 object-contain"
           priority
         />
       </Link>
@@ -44,7 +43,6 @@ export function Header() {
         {[
           { label: "Início", href: "#inicio" },
           { label: "Loja", href: "#loja" },
-          { label: "Como usar", href: "#como-usar" },
           { label: "Sobre", href: "#sobre" },
           { label: "Contato", href: "#contato" },
         ].map((link) => (
