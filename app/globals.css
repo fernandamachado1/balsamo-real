@@ -24,16 +24,22 @@
 :root {
   --background: #f4f1ea; /* Beige background from the image */
   --foreground: #171717;
+  --footer-background: #d7d4bd;
 }
 
 html {
   scroll-behavior: smooth;
+  background: var(--footer-background);
 }
 
 body {
-  background: var(--background);
+  background: var(--footer-background);
   color: var(--foreground);
   font-family: var(--font-sans);
+}
+
+main {
+  background: var(--background);
 }
 
 h1,

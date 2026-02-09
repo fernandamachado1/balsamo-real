@@ -35,7 +35,7 @@ export function ProductSection() {
                             </Typography.Paragraph>
 
                         </div>
-                        <div className="mt-10 border-t border-[#e6dccb] pt-6 grid gap-4">
+                        {/* <div className="mt-10 border-t border-[#e6dccb] pt-6 grid gap-4">
                             <Typography.Title level={2} className="!mt-0">
                                 Benefícios
                             </Typography.Title>
@@ -53,7 +53,7 @@ export function ProductSection() {
                                     <span>Seguro para bolsas, carteiras, sapatos e jaquetas.</span>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                         <div className="mt-10 flex flex-wrap gap-4">
                             <a
                                 href="#contato"

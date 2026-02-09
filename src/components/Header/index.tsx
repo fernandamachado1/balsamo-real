@@ -22,7 +22,7 @@ export function Header() {
     <motion.header
       className={`w-full py-6 px-8 h-16 flex items-center justify-between fixed top-0 left-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-white/80 backdrop-blur-md shadow-sm py-4"
-          : "bg-transparent"
+          : "bg-[var(--background)]"
         }`}
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -34,7 +34,7 @@ export function Header() {
           alt="Bálsamo Real"
           width={56}
           height={56}
-          className="h-8 w-10 md:h-12 md:w-12 object-contain"
+          className="h-12 w-12 md:h-26 md:w-26 object-contain"
           priority
         />
       </Link>
