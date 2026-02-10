@@ -3,6 +3,15 @@
 import { motion } from "framer-motion";
 import { Typography } from "antd";
 export function ProductSection() {
+    const buyMessage = encodeURIComponent(
+        "Olá! Quero comprar o Bálsamo Real. Vim pelo site."
+    );
+    const resaleMessage = encodeURIComponent(
+        "Olá! Tenho interesse em revender o Bálsamo Real. Vim pelo site."
+    );
+    const whatsappBuyLink = `https://wa.me/5541987236228?text=${buyMessage}`;
+    const whatsappResaleLink = `https://wa.me/5541987236228?text=${resaleMessage}`;
+
     return (
         <section id="loja" className="py-24 px-6 bg-[#f6f1e9] border-y border-[#e9dfd1] overflow-hidden">
             <div className="max-w-6xl mx-auto space-y-16">
@@ -56,18 +65,22 @@ export function ProductSection() {
                         </div> */}
                         <div className="mt-10 flex flex-wrap gap-4">
                             <a
-                                href="#contato"
+                                href={whatsappBuyLink}
                                  style={{borderRadius: 4}}
                                 className="px-6 py-3 border bg-[#e0d5c1]  border-[#2c2c2c] text-[#2c2c2c] uppercase tracking-[0.2em] text-xs hover:bg-[#2c2c2c] hover:text-[#f4f1ea] transition-colors"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <Typography.Text className="text-inherit uppercase tracking-[0.2em] text-xs">
                                     Comprar pelo WhatsApp
                                 </Typography.Text>
                             </a>
                             <a
-                                href="#contato"
+                                href={whatsappResaleLink}
                                  style={{borderRadius: 4}}
                                 className="px-6 py-3 border border-[#8B7355] text-[#8B7355] uppercase tracking-[0.2em] text-xs hover:bg-[#8B7355] hover:text-white transition-colors"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <Typography.Text className="text-inherit uppercase tracking-[0.2em] text-xs">
                                     Quero revender

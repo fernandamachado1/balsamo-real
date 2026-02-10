@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 import { Typography } from "antd";
 
 export function ResaleSection() {
+    const message = encodeURIComponent(
+        "Olá! Tenho interesse em revender o Bálsamo Real. Vim pelo site."
+    );
+    const whatsappLink = `https://wa.me/5541987236228?text=${message}`;
+
     return (
         <section id="resale" className="py-24 px-6 bg-[#f6f1e9] border-y border-[#e9dfd1] overflow-hidden">
             <div className="max-w-6xl mx-auto space-y-16">
@@ -65,9 +70,11 @@ export function ResaleSection() {
                         </div>
                         <div className="mt-10 flex flex-wrap gap-4">
                             <a
-                                href="#contato"
+                                href={whatsappLink}
                                 style={{ borderRadius: 4 }}
                                 className="px-6 py-3 border border-[#8B7355] text-[#8B7355] uppercase tracking-[0.2em] text-xs hover:bg-[#8B7355] hover:text-white transition-colors"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <Typography.Text className="text-inherit uppercase tracking-[0.2em] text-xs">
                                     Quero revender

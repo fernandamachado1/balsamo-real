@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 import { Typography } from "antd";
 
 export function HistorySection() {
+  const message = encodeURIComponent(
+    "Olá! Quero falar com a equipe do Bálsamo Real. Vim pelo site."
+  );
+  const whatsappLink = `https://wa.me/5541987236228?text=${message}`;
+
   return (
     <section id="sobre" className="py-24 px-6 bg-[#efe6d8] border-y border-[#e0d5c1] overflow-hidden">
       <div className="max-w-6xl mx-auto">
@@ -58,9 +63,11 @@ export function HistorySection() {
               </ul>
               <div className="pt-2">
                 <a
-                  href="#contato"
+                  href={whatsappLink}
                   style={{borderRadius: 4}}
                   className="inline-flex items-center justify-center px-6 py-3 border border-[#2c2c2c] text-[#2c2c2c] uppercase tracking-[0.2em] text-xs hover:bg-[#2c2c2c] hover:text-[#f4f1ea] transition-colors"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Falar com a equipe
                 </a>
