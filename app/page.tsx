@@ -2,6 +2,7 @@ import { Hero } from "@/src/components/Hero";
 import { ProductSection } from "@/src/components/ProductSection";
 import { HistorySection } from "@/src/components/HistorySection";
 import { ResaleSection } from "@/src/components/ResaleSection";
+import { FormContact } from "@/src/components/FormContact";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <ProductSection />
       <HistorySection />
       <ResaleSection/>
+      <FormContact />
     </div>
   );
 }
