@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Flex, Typography } from "antd";
+import { Typography } from "antd";
 export function ProductSection() {
     return (
         <section id="loja" className="py-24 px-6 bg-[#f6f1e9] border-y border-[#e9dfd1] overflow-hidden">
@@ -57,6 +57,7 @@ export function ProductSection() {
                         <div className="mt-10 flex flex-wrap gap-4">
                             <a
                                 href="#contato"
+                                 style={{borderRadius: 4}}
                                 className="px-6 py-3 border bg-[#e0d5c1]  border-[#2c2c2c] text-[#2c2c2c] uppercase tracking-[0.2em] text-xs hover:bg-[#2c2c2c] hover:text-[#f4f1ea] transition-colors"
                             >
                                 <Typography.Text className="text-inherit uppercase tracking-[0.2em] text-xs">
@@ -65,6 +66,7 @@ export function ProductSection() {
                             </a>
                             <a
                                 href="#contato"
+                                 style={{borderRadius: 4}}
                                 className="px-6 py-3 border border-[#8B7355] text-[#8B7355] uppercase tracking-[0.2em] text-xs hover:bg-[#8B7355] hover:text-white transition-colors"
                             >
                                 <Typography.Text className="text-inherit uppercase tracking-[0.2em] text-xs">
@@ -81,11 +83,11 @@ export function ProductSection() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <div>
-                            <div className="relative h-[520px] w-full bg-[#e0d5c1] overflow-hidden">
+                            <div className="relative h-[500px] w-full bg-[#e0d5c1] overflow-hidden rounded-3xl border border-[#e0d5c1] shadow-[0_20px_60px_-40px_rgba(0,0,0,0.45)]">
                                 <img
                                     src="/balsamo_1.jpg"
                                     alt="Detalhe do Bálsamo Real"
-                                    className="object-cover w-full h-full"
+                                    className="object-cover w-full h-full scale-[1.02]"
                                 />
                             </div>
                         </div>

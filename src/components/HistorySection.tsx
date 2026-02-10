@@ -21,11 +21,11 @@ export function HistorySection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="">
+            <div className="relative overflow-hidden rounded-3xl border border-[#e0d5c1] shadow-[0_20px_60px_-40px_rgba(0,0,0,0.45)]">
               <img
                 src="/IMG_5473.jpg"
                 alt="Textura natural do couro"
-                className="object-cover w-full h-[520px]"
+                className="object-cover w-full h-[460px] scale-[1.02]"
               />
             </div>
           </motion.div>
@@ -59,6 +59,7 @@ export function HistorySection() {
               <div className="pt-2">
                 <a
                   href="#contato"
+                  style={{borderRadius: 4}}
                   className="inline-flex items-center justify-center px-6 py-3 border border-[#2c2c2c] text-[#2c2c2c] uppercase tracking-[0.2em] text-xs hover:bg-[#2c2c2c] hover:text-[#f4f1ea] transition-colors"
                 >
                   Falar com a equipe

@@ -28,34 +28,60 @@ export function FormContact() {
   };
 
   return (
-    <Form layout="vertical" form={form} onFinish={onFinish}>
-      <Form.Item
-        label="Nome"
-        name="name"
-        rules={[{ required: true }]}
-      >
-        <Input />
-      </Form.Item>
+    <section className="bg-[#f4f1ea] py-16 px-6 md:px-10">
+      <div className="mx-auto w-full max-w-2xl rounded-2xl border border-[#e6dccb] bg-white/80 p-6 md:p-10 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.4)]">
+        <div className="mb-8 space-y-2">
+          <h3 className="text-2xl md:text-3xl font-serif text-[#2c2c2c]">
+            Fale com a gente
+          </h3>
+          <p className="text-sm md:text-base text-[#4a4a4a] leading-relaxed">
+            Tire dúvidas, peça recomendações ou faça seu pedido. Respondemos o
+            quanto antes.
+          </p>
+        </div>
 
-      <Form.Item
-        label="Email"
-        name="email"
-        rules={[{ required: true, type: "email" }]}
-      >
-        <Input />
-      </Form.Item>
+        <Form
+          layout="vertical"
+          form={form}
+          onFinish={onFinish}
+          className="space-y-4"
+        >
+          <Form.Item
+            label={<span className="text-[#2c2c2c]">Nome</span>}
+            name="name"
+            rules={[{ required: true }]}
+          >
+            <Input size="large" className="rounded-lg" />
+          </Form.Item>
 
-      <Form.Item
-        label="Mensagem"
-        name="message"
-        rules={[{ required: true }]}
-      >
-        <Input.TextArea rows={4} />
-      </Form.Item>
+          <Form.Item
+            label={<span className="text-[#2c2c2c]">Email</span>}
+            name="email"
+            rules={[{ required: true, type: "email" }]}
+          >
+            <Input size="large" className="rounded-lg" />
+          </Form.Item>
 
-      <Button type="primary" htmlType="submit">
-        Enviar
-      </Button>
-    </Form>
+          <Form.Item
+            label={<span className="text-[#2c2c2c]">Mensagem</span>}
+            name="message"
+            rules={[{ required: true }]}
+          >
+            <Input.TextArea rows={5} className="rounded-lg" />
+          </Form.Item>
+
+          <Button
+            type="primary"
+            htmlType="submit"
+            size="large"
+            color="danger"
+            style={{backgroundColor: "#8B7355"}}
+            className="w-full rounded-lg bg-[#8B7355] hover:!bg-[#7a644c]"
+          >
+            Enviar mensagem
+          </Button>
+        </Form>
+      </div>
+    </section>
   );
 }

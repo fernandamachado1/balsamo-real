@@ -3,17 +3,17 @@
 @font-face {
   font-family: "Colus";
   src: url("/Colus-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  /* font-weight: 100; */
+  /* font-style: normal;
+  font-display: swap; */
 }
 
 @font-face {
   font-family: "Mosley";
   src: url("/Mosley%20Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  /* font-weight: 100; */
+  /* font-style: normal;
+  font-display: swap; */
 }
 
 @theme {

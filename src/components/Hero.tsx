@@ -53,6 +53,7 @@ export function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.6 }}
+                     style={{borderRadius: 4}}
                 >
                     Comprar pelo WhatsApp
                 </motion.button>

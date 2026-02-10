@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Flex, Typography } from "antd";
+import { Typography } from "antd";
 
 export function ResaleSection() {
     return (
@@ -15,11 +15,11 @@ export function ResaleSection() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <div>
-                            <div className="relative h-[520px] w-full bg-[#e0d5c1] overflow-hidden">
+                            <div className="relative h-[490px] w-full bg-[#e0d5c1] overflow-hidden rounded-3xl border border-[#e0d5c1] shadow-[0_20px_60px_-40px_rgba(0,0,0,0.45)]">
                                 <img
                                     src="/IMG_5500.jpg"
                                     alt="Detalhe do Bálsamo Real"
-                                    className="object-cover w-full h-full"
+                                    className="object-cover w-full h-full scale-[1.02]"
                                 />
                             </div>
                         </div>
@@ -30,29 +30,29 @@ export function ResaleSection() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="space-y-6 max-w-xl">
+                        <div className="space-y-8 max-w-xl">
                             {/* <Typography.Text className="block uppercase tracking-[0.2em] text-xs text-[#7a6b54]">
                                 O produto
                             </Typography.Text> */}
                             <Typography.Title level={2} className="!mt-0">
-                                Revenda no seu ateliê
+                                Revenda em seu ateliê
                             </Typography.Title>
 
                             <Typography.Paragraph
-                                className="text-[#4a4a4a]"
-                                style={{ fontSize: 16 }}
+                                className="text-[#4a4a4a] leading-relaxed"
+                                style={{ fontSize: 15 }}
                             >
                                 O Bálsamo Real também pode ser adquirido para uso profissional ou revenda livre, sem regras de preço ou formato de venda.
                             </Typography.Paragraph>
 
                             <Typography.Paragraph
-                                className="text-[#4a4a4a]"
-                                style={{ fontSize: 16 }}
+                                className="text-[#4a4a4a] text-base leading-relaxed font-light"
+                                style={{ fontSize: 15 }}
                             >
-                                É uma opção pensada para quem trabalha com artigos em couro e quer oferecer um cuidado extra aos clientes — seja no acabamento final das peças ou como um produto complementar de manutenção.
+                                É uma opção pensada para quem trabalha com artigos em couro e quer oferecer um cuidado extra aos clientes, seja no acabamento final das peças ou como um produto complementar de manutenção.
                             </Typography.Paragraph>
 
-                            <div className="space-y-3">
+                            <div className="space-y-4 pt-4 border-t border-[#e3d8c8]">
                                 <Typography.Text className="block uppercase tracking-[0.2em] text-xs text-[#7a6b54]">
                                     Como funciona
                                 </Typography.Text>
@@ -66,6 +66,7 @@ export function ResaleSection() {
                         <div className="mt-10 flex flex-wrap gap-4">
                             <a
                                 href="#contato"
+                                style={{ borderRadius: 4 }}
                                 className="px-6 py-3 border border-[#8B7355] text-[#8B7355] uppercase tracking-[0.2em] text-xs hover:bg-[#8B7355] hover:text-white transition-colors"
                             >
                                 <Typography.Text className="text-inherit uppercase tracking-[0.2em] text-xs">
