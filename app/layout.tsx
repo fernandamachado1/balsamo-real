@@ -18,51 +18,58 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <footer className="bg-[#D7D4BD] border-t border-[#e6dccb]">
-          <div className="max-w-6xl mx-auto px-6 md:px-8 pt-12 md:pt-20 pb-8 md:pb-12">
-            <div className="grid gap-8 md:gap-12 md:grid-cols-4 text-[#2c2c2c] text-[14px] md:text-[15px] leading-relaxed">
-              <div className="space-y-6">
-                <div className="text-xs uppercase tracking-[0.2em] text-[#8B7355] font-medium">
+          <div className="max-w-6xl mx-auto px-6 md:px-8 pt-12 md:pt-20 pb-8 md:pb-12 text-[#2a241d]">
+            <div className="grid gap-10 md:gap-12 md:grid-cols-3 text-[14px] md:text-[15px] leading-relaxed">
+              <div className="space-y-5">
+                <div className="text-xs uppercase tracking-[0.25em] text-[#5f4b36] font-semibold">
                   Contato
                 </div>
-                <div className="space-y-2 text-[#4a4a4a]">
-                  <div>
-                    (41) 9684-9563
-                  </div>
-                  <div>
-                    balsamo.real@gmail.com
-                  </div>
-                  <a
-                    href="https://www.instagram.com/balsamo.real/"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Instagram da Bálsamo Real"
-                    className="inline-flex items-center gap-2 text-[#2c2c2c] hover:text-[#8B7355] transition-colors"
-                  >
-                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#c9b89f] bg-[#efe4d2]">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="1.75"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="h-4 w-4"
-                        aria-hidden="true"
-                      >
-                        <rect x="3" y="3" width="18" height="18" rx="5" />
-                        <circle cx="12" cy="12" r="4" />
-                        <circle cx="17.5" cy="6.5" r="1.25" />
-                      </svg>
-                    </span>
-                    <span className="text-sm">Instagram</span>
-                  </a>
+                <div className="space-y-2 text-[#3d352c]">
+                  <div>(41) 9684-9563</div>
+                  <div>balsamo.real@gmail.com</div>
                 </div>
+                <a
+                  href="https://www.instagram.com/balsamo.real/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram da Bálsamo Real"
+                  className="inline-flex items-center gap-2 text-[#2a241d] hover:text-[#5f4b36] transition-colors"
+                >
+                  <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#c9b89f] bg-[#efe4d2]">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-4 w-4"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="3" width="18" height="18" rx="5" />
+                      <circle cx="12" cy="12" r="4" />
+                      <circle cx="17.5" cy="6.5" r="1.25" />
+                    </svg>
+                  </span>
+                  <span className="text-sm">Instagram</span>
+                </a>
               </div>
-              <div className="space-y-6">
-                <div className="pt-2 text-sm text-[#4a4a4a]">
+              <div className="space-y-5">
+                <div className="text-xs uppercase tracking-[0.25em] text-[#5f4b36] font-semibold">
+                  Atendimento
+                </div>
+                <div className="text-[#3d352c]">
                   Postagem dos produtos realizada todas sextas-feiras.
                 </div>
               </div>
+              {/* <div className="space-y-5">
+                <div className="text-xs uppercase tracking-[0.25em] text-[#5f4b36] font-semibold">
+                  Sobre
+                </div>
+                <div className="text-[#3d352c]">
+                  Hidratante e condicionador natural para artigos em couro.
+                </div>
+              </div> */}
               {/* <div className="space-y-4 md:col-span-2">
                 <div className="text-xs uppercase tracking-[0.2em] text-[#8B7355] font-medium">
                   Fale com a gente
@@ -101,9 +108,8 @@ export default function RootLayout({
                 </div>
               </div> */}
             </div>
-            <div />
-            <hr className="my-6 md:my-8 border-[#e6dccb]" />
-            <div className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-[#8B7355] flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-4">
+            <hr className="my-6 md:my-8 border-[#d8ccb9]" />
+            <div className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-[#6f5b45] flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-4">
               <div>Balsamo Real</div>
               <div>Todos os direitos reservados</div>
             </div>
