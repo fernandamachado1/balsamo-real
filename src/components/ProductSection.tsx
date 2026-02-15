@@ -42,19 +42,19 @@ export function ProductSection() {
                                 </Typography.Paragraph>
                             </div>
                             <div className="max-w-md space-y-3">
-                                <a
+                                {/* <a
                                     href={whatsappBuyLink}
                                     style={{ borderRadius: 4 }}
-                                    className="block w-full px-5 py-3 border border-[#2c2c2c] bg-white text-[#2c2c2c] uppercase tracking-[0.2em] text-xs hover:bg-[#2c2c2c] hover:text-[#f4f1ea] transition-colors text-center"
+                                    className="block w-full px-5 py-3 border border-[#2c2c2c] bg-[#2c2c2c] text-[#f4f1ea] uppercase tracking-[0.2em] text-xs hover:bg-[#1f1f1f] hover:border-[#1f1f1f] transition-colors text-center"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
                                     Comprar pelo WhatsApp
-                                </a>
+                                </a> */}
                                 <a
                                     href={whatsappResaleLink}
                                     style={{ borderRadius: 4 }}
-                                    className="block w-full px-5 py-3 border border-[#8B7355] text-[#8B7355] uppercase tracking-[0.2em] text-xs hover:bg-[#8B7355] hover:text-white transition-colors text-center"
+                                    className="block w-full px-5 py-3 border border-[#8B7355] bg-[#8B7355] text-white uppercase tracking-[0.2em] text-xs hover:bg-[#7a644c] hover:border-[#7a644c] transition-colors text-center"
                                     target="_blank"
                                     rel="noreferrer"
                                 >

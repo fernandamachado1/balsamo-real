@@ -61,7 +61,7 @@ export function HistorySection() {
                 <a
                   href={whatsappLink}
                   style={{ borderRadius: 4 }}
-                  className="block w-full px-5 py-3 border border-[#2c2c2c] text-[#2c2c2c] uppercase tracking-[0.2em] text-xs hover:bg-[#2c2c2c] hover:text-[#f4f1ea] transition-colors text-center"
+                  className="block w-full px-5 py-3 border border-[#2c2c2c] bg-[#2c2c2c] text-[#f4f1ea] uppercase tracking-[0.2em] text-xs hover:bg-[#1f1f1f] hover:border-[#1f1f1f] transition-colors text-center"
                   target="_blank"
                   rel="noreferrer"
                 >

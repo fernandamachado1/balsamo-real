@@ -54,7 +54,7 @@ export function ResaleSection() {
                                 <a
                                     href={whatsappLink}
                                     style={{ borderRadius: 4 }}
-                                    className="block w-full px-5 py-3 border border-[#8B7355] text-[#8B7355] uppercase tracking-[0.2em] text-xs hover:bg-[#8B7355] hover:text-white transition-colors text-center"
+                                    className="block w-full px-5 py-3 border border-[#8B7355] bg-[#8B7355] text-white uppercase tracking-[0.2em] text-xs hover:bg-[#7a644c] hover:border-[#7a644c] transition-colors text-center"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
