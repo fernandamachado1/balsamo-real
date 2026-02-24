@@ -1,19 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Flex, Typography } from "antd";
+import { Typography } from "antd";
 export function ProductSection() {
-    const buyMessage = encodeURIComponent(
-        "Olá! Quero comprar o Bálsamo Real. Vim pelo site."
-    );
     const resaleMessage = encodeURIComponent(
         "Olá! Tenho interesse em revender o Bálsamo Real. Vim pelo site."
     );
-    const whatsappBuyLink = `https://wa.me/5541987236228?text=${buyMessage}`;
     const whatsappResaleLink = `https://wa.me/5541987236228?text=${resaleMessage}`;
 
     return (
-        <section id="loja" className="py-24 px-6 bg-[#f4f1ea] border-y border-[#e9dfd1] overflow-hidden">
+        <section id="sobre" className="py-24 px-6 bg-[#f4f1ea] border-y border-[#e9dfd1] overflow-hidden">
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
                     <motion.div
@@ -42,19 +38,9 @@ export function ProductSection() {
                                 </Typography.Paragraph>
                             </div>
                             <div className="max-w-md space-y-3">
-                                {/* <a
-                                    href={whatsappBuyLink}
-                                    style={{ borderRadius: 4 }}
-                                    className="block w-full px-5 py-3 border border-[#2c2c2c] bg-[#2c2c2c] text-[#f4f1ea] uppercase tracking-[0.2em] text-xs hover:bg-[#1f1f1f] hover:border-[#1f1f1f] transition-colors text-center"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Comprar pelo WhatsApp
-                                </a> */}
                                 <a
                                     href={whatsappResaleLink}
-                                    style={{ borderRadius: 4 }}
-                                    className="block w-full px-5 py-3 border border-[#8B7355] bg-[#8B7355] text-white uppercase tracking-[0.2em] text-xs hover:bg-[#7a644c] hover:border-[#7a644c] transition-colors text-center"
+                                    className="cta-primary block w-full px-5 py-3 text-center"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
@@ -71,7 +57,7 @@ export function ProductSection() {
                     >
                         <div className="relative flex items-center justify-center">
                             <div className="absolute h-[360px] w-[360px] rounded-full bg-[#dbe6d0]" />
-                            <div className="relative h-[460px] w-[360px] overflow-hidden rounded-[36px] border border-[#e0d5c1] bg-[#f6f1e9] shadow-[0_20px_60px_-40px_rgba(0,0,0,0.45)]">
+                            <div className="relative h-[460px] w-[360px] overflow-hidden border border-[#e0d5c1] bg-[#f6f1e9] shadow-[0_20px_60px_-40px_rgba(0,0,0,0.45)]">
                                 <img
                                     src="/balsamo_1.jpg"
                                     alt="Detalhe do Bálsamo Real"

@@ -10,78 +10,72 @@ export function ResaleSection() {
     const whatsappLink = `https://wa.me/5541987236228?text=${message}`;
 
     return (
-        <section id="resale" className="py-24 px-6 bg-[#f4f1ea] border-y border-[#e9dfd1] overflow-hidden">
-            <div className="max-w-6xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
-                    <motion.div
-                        initial={{ opacity: 0, x: -40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
+        <section id="resale" className="relative py-24 md:py-28 px-6 overflow-hidden bg-[#f4f1ea] border-y border-[#e9dfd1]">
+            <motion.div
+                initial={{ opacity: 0, y: 28 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="relative max-w-4xl mx-auto"
+            >
+                <div className="text-center">
+                    <Typography.Text className="block uppercase tracking-[0.24em] text-[11px] text-[#7a6b54]">
+                        Programa de revenda
+                    </Typography.Text>
+
+                    <Typography.Title
+                        level={2}
+                        className="!mb-0 !mt-4 text-[#2c2c2c]"
+                        style={{ fontSize: "clamp(2rem,1.5rem + 1.7vw,3.2rem)", lineHeight: 1.08 }}
                     >
-                        <div className="space-y-8">
-                            <Typography.Title level={2} className="!mt-0 text-[#2c2c2c] text-left">
-                                Revenda em seu ateliê
-                            </Typography.Title>
+                        Revenda em seu ateliê
+                    </Typography.Title>
 
-                            <div className="space-y-4 max-w-xl">
-                                <Typography.Paragraph
-                                    className="text-[#4a4a4a] leading-relaxed"
-                                    style={{ fontSize: 16 }}
-                                >
-                                    O Bálsamo Real também pode ser adquirido para uso profissional ou revenda livre, sem regras de preço ou formato de venda.
-                                </Typography.Paragraph>
-                                <Typography.Paragraph
-                                    className="text-[#4a4a4a] leading-relaxed font-light"
-                                    style={{ fontSize: 16 }}
-                                >
-                                    É uma opção pensada para quem trabalha com artigos em couro e quer oferecer um cuidado extra aos clientes, seja no acabamento final das peças ou como um produto complementar de manutenção.
-                                </Typography.Paragraph>
-                            </div>
+                    <div className="mt-7 space-y-4 max-w-xl mx-auto">
+                        <Typography.Paragraph
+                            className="!mb-0 text-[#4a4a4a] leading-relaxed"
+                            style={{ fontSize: 16 }}
+                        >
+                            O Bálsamo Real também pode ser adquirido para uso profissional ou revenda livre, sem regras de preço ou formato de venda.
+                        </Typography.Paragraph>
+                        <Typography.Paragraph
+                            className="!mb-0 text-[#4a4a4a] leading-relaxed font-light"
+                            style={{ fontSize: 16 }}
+                        >
+                            É uma opção para quem trabalha com artigos em couro e quer oferecer um cuidado extra aos clientes, no acabamento das peças ou na manutenção.
+                        </Typography.Paragraph>
+                    </div>
 
-                            <div className="space-y-4 pt-4 border-t border-[#e3d8c8] max-w-xl">
-                                <Typography.Text className="block uppercase tracking-[0.2em] text-xs text-[#7a6b54]">
-                                    Como funciona
-                                </Typography.Text>
-                                <ul className="list-disc pl-5 space-y-2 text-[#4a4a4a] text-base">
-                                    <li>Compra mínima para uso profissional ou revenda a partir de 4 unidades</li>
-                                    <li>Produto pronto para uso e venda</li>
-                                    <li>Reposição simples, feita diretamente pelo WhatsApp</li>
-                                </ul>
-                            </div>
-
-                            <div className="max-w-md">
-                                <a
-                                    href={whatsappLink}
-                                    style={{ borderRadius: 4 }}
-                                    className="block w-full px-5 py-3 border border-[#8B7355] bg-[#8B7355] text-white uppercase tracking-[0.2em] text-xs hover:bg-[#7a644c] hover:border-[#7a644c] transition-colors text-center"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Quero revender
-                                </a>
-                            </div>
+                    <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 text-[#3f3f3f]">
+                        <div className="py-3">
+                            <Typography.Text className="text-[13px] leading-relaxed">
+                                Compra mínima a partir de 4 unidades
+                            </Typography.Text>
                         </div>
-                    </motion.div>
-                    <motion.div
-                        initial={{ opacity: 0, x: 40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8, delay: 0.15 }}
-                    >
-                        <div className="relative flex items-center justify-center">
-                            <div className="absolute h-[360px] w-[360px] rounded-full bg-[#dbe6d0]" />
-                            <div className="relative h-[460px] w-[360px] overflow-hidden rounded-[36px] border border-[#e0d5c1] bg-[#f6f1e9] shadow-[0_20px_60px_-40px_rgba(0,0,0,0.45)]">
-                                <img
-                                    src="/IMG_5500.jpg"
-                                    alt="Detalhe do Bálsamo Real"
-                                    className="object-cover w-full h-full scale-[1.02]"
-                                />
-                            </div>
+                        <div className="py-3 md:border-x md:border-[#d8cbb6] md:px-4">
+                            <Typography.Text className="text-[13px] leading-relaxed">
+                                Produto pronto para uso e venda
+                            </Typography.Text>
                         </div>
-                    </motion.div>
+                        <div className="py-3">
+                            <Typography.Text className="text-[13px] leading-relaxed">
+                                Reposição direta pelo WhatsApp
+                            </Typography.Text>
+                        </div>
+                    </div>
+
+                    <div className="mt-9 flex justify-center">
+                        <a
+                            href={whatsappLink}
+                            className="cta-primary inline-flex items-center justify-center px-8 py-3"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Quero revender
+                        </a>
+                    </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 }

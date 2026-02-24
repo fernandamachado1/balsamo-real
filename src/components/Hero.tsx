@@ -49,11 +49,10 @@ export function Hero() {
 
                 <motion.button
                     onClick={() => window.open(whatsappLink, "_blank")}
-                    className="bg-white text-[#2c2c2c] px-10 py-4 text-xs md:text-sm font-medium tracking-[0.3em] uppercase hover:bg-[#f4f1ea] transition-colors"
+                    className="cta-primary px-10 py-4 text-xs md:text-sm font-medium"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.6 }}
-                     style={{borderRadius: 4}}
                 >
                     Comprar pelo WhatsApp
                 </motion.button>

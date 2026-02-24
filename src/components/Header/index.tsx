@@ -19,6 +19,13 @@ export function Header() {
     }
   });
 
+  const navLinks = [
+    { label: "Início", href: "#inicio" },
+    { label: "Sobre", href: "#sobre" },
+    { label: "Marca", href: "#marca" },
+    { label: "Revenda", href: "#resale" },
+  ];
+
   return (
     <>
       <motion.header
@@ -42,12 +49,7 @@ export function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-800 tracking-wide">
-          {[
-            { label: "Início", href: "#inicio" },
-            { label: "Loja", href: "#loja" },
-            { label: "Sobre", href: "#sobre" },
-            { label: "Contato", href: "#contato" },
-          ].map((link) => (
+          {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -91,12 +93,7 @@ export function Header() {
             onClick={(event) => event.stopPropagation()}
           >
             <div className="flex flex-col gap-4 text-[#2c2c2c]">
-              {[
-                { label: "Início", href: "#inicio" },
-                { label: "Loja", href: "#loja" },
-                { label: "Sobre", href: "#sobre" },
-                { label: "Contato", href: "#contato" },
-              ].map((link) => (
+              {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}

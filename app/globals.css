@@ -19,6 +19,15 @@
 @theme {
   --font-sans: "Colus", serif;
   --font-serif: "Mosley", serif;
+  --color-primary: #8b7355;
+  --color-primary-foreground: #fdfcf9;
+  --color-secondary: #e9e4d9;
+  --color-background: #fdfcf9;
+  --color-foreground: #1a1a1a;
+  --color-muted-foreground: #6b7280;
+  --color-border: #dcd7cc;
+  --color-card: #f7f4ed;
+  --color-card-foreground: #1a1a1a;
 }
 
 :root {
@@ -60,6 +69,21 @@ h6,
   font-family: var(--font-serif) !important;
 }
 
+.cta-primary {
+  border-radius: 4px;
+  border: 1px solid #8b7355;
+  background: #8b7355;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.cta-primary:hover {
+  background: #7a644c;
+  border-color: #7a644c;
+}
 
 section[id] {
   scroll-margin-top: 96px;
