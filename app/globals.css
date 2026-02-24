@@ -33,16 +33,15 @@
 :root {
   --background: #f4f1ea; /* Beige background from the image */
   --foreground: #171717;
-  --footer-background: #d7d4bd;
 }
 
 html {
   scroll-behavior: smooth;
-  background: var(--footer-background);
+  background: var(--background);
 }
 
 body {
-  background: var(--footer-background);
+  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
 }

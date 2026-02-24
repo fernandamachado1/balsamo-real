@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 function Component_2_1() {
   const buyMessage = encodeURIComponent("Olá! Quero comprar o Bálsamo Real. Vim pelo site 😊");
@@ -12,10 +13,14 @@ function Component_2_1() {
       data-component-id="Component_2_1"
     >
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/background_home.png"
           alt="Bálsamo Real Background"
-          className="w-full h-full object-cover scale-105"
+          fill
+          priority
+          quality={80}
+          sizes="100vw"
+          className="object-cover scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/35 to-[#17130f]/70 backdrop-blur-[1px]"></div>
       </div>
