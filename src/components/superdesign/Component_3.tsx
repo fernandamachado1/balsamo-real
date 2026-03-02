@@ -58,7 +58,7 @@ function Component_3() {
           <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
             <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-6">Contato</h4>
             <div className="space-y-3 text-sm text-white/75">
-              <p>(41) 98723-6228</p>
+              <p>(41) 98869-1275</p>
               <a href="mailto:balsamo.real@gmail.com" className="block hover:text-primary transition-colors">
                 balsamo.real@gmail.com
               </a>
@@ -72,7 +72,7 @@ function Component_3() {
               </a>
             </div>
             <motion.a
-              href="https://wa.me/5541987236228?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20equipe%20do%20B%C3%A1lsamo%20Real.%20Vim%20pelo%20site."
+              href="https://wa.me/5541988691275?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20equipe%20do%20B%C3%A1lsamo%20Real.%20Vim%20pelo%20site."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-full text-[11px] font-bold tracking-[0.16em] uppercase hover:opacity-90 transition-all"
@@ -104,7 +104,7 @@ function Component_3() {
               Instagram
             </a>
             <a
-              href="https://wa.me/5541987236228"
+              href="https://wa.me/5541988691275"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[11px] text-white/65 hover:text-primary transition-colors tracking-[0.18em] uppercase font-medium"

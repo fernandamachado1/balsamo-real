@@ -77,7 +77,7 @@ export function Header() {
             </div>
           </button>
           <a
-            href="https://wa.me/5541987236228"
+            href="https://wa.me/5541988691275"
             target="_blank"
             rel="noreferrer"
             className="hidden md:inline-flex items-center rounded-md bg-[#8B7355] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#7a644c]"
@@ -104,7 +104,7 @@ export function Header() {
                 </a>
               ))}
               <a
-                href="https://wa.me/5541987236228"
+                href="https://wa.me/5541988691275"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-2 inline-flex items-center justify-center rounded-md bg-[#8B7355] px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-[#7a644c]"

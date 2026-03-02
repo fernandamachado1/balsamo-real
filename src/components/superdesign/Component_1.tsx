@@ -39,7 +39,7 @@ function Component_1() {
 
       <div className="flex items-center gap-x-4">
         <motion.a
-          href="https://wa.me/5541987236228"
+          href="https://wa.me/5541988691275"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-all shadow-sm hover:shadow-md active:scale-95"

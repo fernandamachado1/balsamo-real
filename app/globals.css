@@ -33,15 +33,34 @@
 :root {
   --background: #f4f1ea; /* Beige background from the image */
   --foreground: #171717;
+  --header-safe-background: #f7f4ed;
+  --footer-safe-background: #211913;
 }
 
 html {
   scroll-behavior: smooth;
-  background: var(--background);
+  background: var(--footer-safe-background);
 }
 
 body {
-  background: var(--background);
+  min-height: 100dvh;
+  background-color: var(--background);
+  background-image:
+    linear-gradient(
+      to bottom,
+      var(--header-safe-background) 0,
+      var(--header-safe-background) 120px,
+      transparent 120px
+    ),
+    linear-gradient(
+      to top,
+      var(--footer-safe-background) 0,
+      var(--footer-safe-background) 190px,
+      transparent 190px
+    );
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 120px, 100% 190px;
+  background-position: top, bottom;
   color: var(--foreground);
   font-family: var(--font-sans);
 }

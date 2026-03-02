@@ -7,7 +7,7 @@ export function ResaleSection() {
     const message = encodeURIComponent(
         "Olá! Tenho interesse em revender o Bálsamo Real. Vim pelo site."
     );
-    const whatsappLink = `https://wa.me/5541987236228?text=${message}`;
+    const whatsappLink = `https://wa.me/5541988691275?text=${message}`;
 
     return (
         <section id="resale" className="relative py-24 md:py-28 px-6 overflow-hidden bg-[#f4f1ea] border-y border-[#e9dfd1]">

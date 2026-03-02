@@ -29,7 +29,7 @@ function Component_2_4_1() {
 
       <div className="flex flex-col sm:flex-row gap-6">
         <a
-          href="https://wa.me/5541987236228?text=Ol%C3%A1!%20Tenho%20interesse%20em%20revender%20o%20B%C3%A1lsamo%20Real.%20Vim%20pelo%20site."
+          href="https://wa.me/5541988691275?text=Ol%C3%A1!%20Tenho%20interesse%20em%20revender%20o%20B%C3%A1lsamo%20Real.%20Vim%20pelo%20site."
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center bg-[#8b7355] text-white px-10 py-5 rounded-sm text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#a68b6d] transition-all duration-500 shadow-xl"

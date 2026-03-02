@@ -4,7 +4,7 @@ function Component_3_1_1() {
       <div>
         <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-8">Contato</h4>
         <div className="text-muted-foreground font-light italic space-y-2">
-          <p>(41) 9684-9563</p>
+          <p>(41) 98869-1275</p>
           <p>balsamo.real@gmail.com</p>
         </div>
       </div>

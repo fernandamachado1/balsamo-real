@@ -7,7 +7,7 @@ export function HistorySection() {
   const message = encodeURIComponent(
     "Olá! Quero falar com a equipe do Bálsamo Real. Vim pelo site."
   );
-  const whatsappLink = `https://wa.me/5541987236228?text=${message}`;
+  const whatsappLink = `https://wa.me/5541988691275?text=${message}`;
 
   return (
     <section id="marca" className="py-24 px-6 bg-[#d7d4bd] border-y border-[#cec8b2] overflow-hidden">

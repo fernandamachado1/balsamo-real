@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Component_2_1() {
   const buyMessage = encodeURIComponent("Olá! Quero comprar o Bálsamo Real. Vim pelo site 😊");
-  const whatsappBuyLink = `https://wa.me/5541987236228?text=${buyMessage}`;
+  const whatsappBuyLink = `https://wa.me/5541988691275?text=${buyMessage}`;
   const titleSize = { fontSize: "clamp(2.75rem, 2rem + 3vw, 5.5rem)" };
 
   return (

@@ -10,7 +10,7 @@ export function Hero() {
         "Olá! Quero comprar o Bálsamo Real. Vim pelo site 😊"
     );
 
-    const whatsappLink = `https://wa.me/5541987236228?text=${message}`;
+    const whatsappLink = `https://wa.me/5541988691275?text=${message}`;
     const titleSize = { fontSize: "clamp(2.75rem, 2rem + 3vw, 5.5rem)" };
     const subtitleSize = { fontSize: "clamp(1rem, 0.9rem + 0.6vw, 1.75rem)" };
 
