@@ -4,7 +4,7 @@ import { Header } from "@/src/components/Header";
 
 export const metadata: Metadata = {
   title: "Bálsamo Real",
-  description: "Hidratante e Condicionador de Couro",
+  description: "Hidratante e Condicionador para Couro",
   icons: {
     icon: [{ url: "/icon.png", sizes: "64x64", type: "image/png" }],
     shortcut: "/icon.png",

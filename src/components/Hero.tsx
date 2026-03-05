@@ -44,7 +44,7 @@ export function Hero() {
                     transition={{ duration: 1, delay: 0.4 }}
                     style={subtitleSize}
                 >
-                    Hidratante e Condicionador de Couro
+                    Hidratante e Condicionador para Couro
                 </MotionParagraph>
 
                 <motion.button

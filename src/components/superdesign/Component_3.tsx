@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 function Component_3() {
   return (
     <footer
@@ -13,17 +11,8 @@ function Component_3() {
       ></div>
 
       <div className="max-w-7xl mx-auto px-6">
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 pb-12"
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={{
-            hidden: { opacity: 0, y: 24 },
-            show: { opacity: 1, y: 0, transition: { duration: 0.6, staggerChildren: 0.1 } }
-          }}
-        >
-          <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 pb-12">
+          <div>
             <div className="mb-6">
               <img
                 alt="Bálsamo Real"
@@ -35,9 +24,9 @@ function Component_3() {
             <p className="text-sm text-white/75 font-light leading-relaxed max-w-sm">
               Preservando a beleza e a durabilidade do couro com ingredientes 100% naturais.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+          <div>
             <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-6">Navegação</h4>
             <ul className="space-y-3">
                 {[
@@ -53,9 +42,9 @@ function Component_3() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
-          <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+          <div>
             <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-6">Contato</h4>
             <div className="space-y-3 text-sm text-white/75">
               <p>(41) 98869-1275</p>
@@ -71,26 +60,18 @@ function Component_3() {
                 @balsamo.real
               </a>
             </div>
-            <motion.a
+            <a
               href="https://wa.me/5541988691275?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20equipe%20do%20B%C3%A1lsamo%20Real.%20Vim%20pelo%20site."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-full text-[11px] font-bold tracking-[0.16em] uppercase hover:opacity-90 transition-all"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.98 }}
             >
               Falar no WhatsApp
-            </motion.a>
-          </motion.div>
-        </motion.div>
+            </a>
+          </div>
+        </div>
 
-        <motion.div
-          className="pt-8 border-t border-white/15 flex flex-col md:flex-row justify-between items-center gap-4"
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
+        <div className="pt-8 border-t border-white/15 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-[11px] text-white/65 tracking-[0.18em] uppercase font-medium">
             &copy; {new Date().getFullYear()} Bálsamo Real. Todos os direitos reservados.
           </div>
@@ -112,7 +93,7 @@ function Component_3() {
               WhatsApp
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </footer>
   );

@@ -37,7 +37,7 @@ function Component_2_1() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
         >
-          <span className="text-white text-xs font-bold tracking-[0.3em] uppercase">Hidratante de couro</span>
+          <span className="text-white text-xs font-bold tracking-[0.3em] uppercase">Hidratante para couro</span>
         </motion.div>
 
         <motion.h1
