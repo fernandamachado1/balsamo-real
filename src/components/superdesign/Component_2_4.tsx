@@ -20,7 +20,7 @@ function Component_2_4() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid items-center gap-16 lg:gap-24 grid-cols-1 lg:grid-cols-2">
           <motion.div
-            className="order-2 lg:order-1"
+            className="order-1 lg:order-1"
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.25 }}
@@ -29,7 +29,7 @@ function Component_2_4() {
             <Component_2_4_1 />
           </motion.div>
           <motion.div
-            className="order-1 lg:order-2"
+            className="order-2 lg:order-2"
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.25 }}
