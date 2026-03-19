@@ -6,22 +6,22 @@ function Component_2_2_1() {
     >
       <div className="flex items-center gap-2 mb-6">
         <div className="h-px w-8 bg-primary"></div>
-        <span className="text-primary text-xs font-bold tracking-[0.2em] uppercase">Hidrata e protege</span>
+        <span className="text-primary text-xs font-bold tracking-[0.2em] uppercase">Formulado para o ateliê</span>
       </div>
-      
+
       <h2 className="text-foreground font-serif text-3xl md:text-4xl lg:text-5xl mb-8 leading-tight">
-        O cuidado certo para <br /> seus artigos em couro
+        Desenvolvido para couro natural
       </h2>
-      
+
       <div className="space-y-6 text-base text-muted-foreground leading-relaxed mb-10 font-light">
         <p>
-          Hidratante 100% natural para o acabamento final ou a revitalização
-          de peças em couro, sem alterar a textura original do material.
+          O Bálsamo Real é um condicionador formulado para hidratar, nutrir e preservar couro natural, muito utilizado em peças como carteiras, bolsas e cintos.
         </p>
         <p>
-          Formulado com <span className="text-foreground font-medium">óleo de amêndoas, manteiga de cacau e cera de abelha</span>, o Bálsamo
-          Real penetra nas fibras, protegendo e realçando a cor de forma leve
-          e sofisticada.
+          Com o tempo, o couro perde seus óleos naturais. O bálsamo atua na reposição dessa nutrição, ajudando a manter a <span className="text-foreground font-medium">flexibilidade e evitar o ressecamento</span>.
+        </p>
+        <p className="text-sm text-muted-foreground/70 italic border-l-2 border-primary/30 pl-4">
+          Indicado para couro natural. Pode não ter o mesmo efeito em materiais sintéticos ou couros com acabamento mais fechado.
         </p>
       </div>
 
@@ -32,7 +32,7 @@ function Component_2_2_1() {
           rel="noopener noreferrer"
           className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-sm font-bold tracking-widest uppercase text-center hover:opacity-90 transition-all shadow-lg"
         >
-          Quero ser revendedor
+          Quero revender
         </a>
       </div>
     </div>

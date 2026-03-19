@@ -2,8 +2,9 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 function Component_2_1() {
-  const buyMessage = encodeURIComponent("Olá! Quero comprar o Bálsamo Real. Vim pelo site 😊");
-  const whatsappBuyLink = `https://wa.me/5541988691275?text=${buyMessage}`;
+  const resaleMessage = encodeURIComponent("Olá! Tenho interesse em revender o Bálsamo Real. Vim pelo site.");
+  const whatsappResaleLink = `https://wa.me/5541988691275?text=${resaleMessage}`;
+  const whatsappLink = `https://wa.me/5541988691275`;
   const titleSize = { fontSize: "clamp(2.75rem, 2rem + 3vw, 5.5rem)" };
 
   return (
@@ -37,7 +38,7 @@ function Component_2_1() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
         >
-          <span className="text-white text-xs font-bold tracking-[0.3em] uppercase">Hidratante para couro</span>
+          <span className="text-white text-xs font-bold tracking-[0.3em] uppercase">Cuidado profissional para couro natural</span>
         </motion.div>
 
         <motion.h1
@@ -51,12 +52,21 @@ function Component_2_1() {
         </motion.h1>
 
         <motion.p
-          className="text-white/90 font-sans text-base md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed font-light tracking-wide uppercase italic"
+          className="text-white/90 font-sans text-base md:text-xl mb-4 max-w-2xl mx-auto leading-relaxed font-light tracking-wide italic"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
         >
-          A excelência no cuidado do seu couro, <br className="hidden md:block" /> preservando tradição e qualidade.
+          Desenvolvido por quem trabalha com couro, para manutenção no dia a dia de ateliês e peças feitas à mão.
+        </motion.p>
+
+        <motion.p
+          className="text-white/75 font-sans text-sm md:text-base mb-10 max-w-xl mx-auto leading-relaxed font-light"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+        >
+          Ofereça mais durabilidade e valor às suas peças com um cuidado pensado para o dia a dia do ateliê.
         </motion.p>
 
         <motion.div
@@ -66,24 +76,35 @@ function Component_2_1() {
           transition={{ duration: 0.7, delay: 0.45 }}
         >
           <motion.a
-            href={whatsappBuyLink}
+            href={whatsappResaleLink}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary text-primary-foreground px-10 py-5 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-primary/90 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
           >
-            Comprar Agora
+            Quero revender
           </motion.a>
           <motion.a
-            href="#sobre"
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white/20 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
           >
-            Saiba Mais
+            Falar no WhatsApp
           </motion.a>
         </motion.div>
+
+        <motion.p
+          className="text-white/50 text-xs mt-6 tracking-wide"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
+        >
+          Venda direcionada para ateliês e lojas • pedidos a partir de 4 unidades
+        </motion.p>
       </motion.div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">

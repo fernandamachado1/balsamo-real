@@ -14,16 +14,16 @@ function Component_2_4_1() {
       </div>
 
       <h2 className="text-[#1f1a14] font-serif text-3xl md:text-4xl lg:text-5xl mb-8 leading-[1.1] tracking-tight">
-        Revenda em seu <br /> 
+        Revenda no seu <br />
         <span className="italic">ateliê</span>
       </h2>
-      
+
       <div className="space-y-6 text-[#4a453e] text-base leading-relaxed mb-12 font-light">
         <p>
-          O Bálsamo Real foi pensado para quem trabalha com o couro e entende seu valor. Ofereça um cuidado extra aos seus clientes.
+          O Bálsamo Real foi desenvolvido para ateliês e profissionais que trabalham com couro e desejam oferecer um cuidado completo aos seus clientes.
         </p>
         <p>
-          Adquira para uso profissional ou revenda livre. Sem regras complexas, apenas o compromisso com a longevidade da peça.
+          Além de preservar as peças, o produto pode ser oferecido como complemento na venda, agregando valor e gerando uma nova fonte de receita.
         </p>
       </div>
 
