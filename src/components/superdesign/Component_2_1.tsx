@@ -38,7 +38,7 @@ function Component_2_1() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
         >
-          <span className="text-white text-xs font-bold tracking-[0.3em] uppercase">Cuidado profissional para couro natural</span>
+          <span className="text-white text-xs font-bold tracking-[0.3em] uppercase">Feito por artesãos</span>
         </motion.div>
 
         <motion.h1
@@ -57,7 +57,7 @@ function Component_2_1() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
         >
-          Desenvolvido por quem trabalha com couro, para manutenção no dia a dia de ateliês e peças feitas à mão.
+          Desenvolvido por quem trabalha com couro, para manutenção de ateliês e peças feitas à mão.
         </motion.p>
 
         <motion.p
@@ -66,7 +66,7 @@ function Component_2_1() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
         >
-          Ofereça mais durabilidade e valor às suas peças com um cuidado pensado para o dia a dia do ateliê.
+          Ofereça mais durabilidade e valor às suas peças.
         </motion.p>
 
         <motion.div
