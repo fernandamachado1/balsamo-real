@@ -57,17 +57,16 @@ function Component_2_1() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
         >
-          Desenvolvido por quem trabalha com couro, para manutenção de ateliês e peças feitas à mão.
-        </motion.p>
+          Desenvolvido por quem trabalha com couro, para manter as peças hidratadas e bem cuidadas ao longo do tempo.        </motion.p>
 
-        <motion.p
+        {/* <motion.p
           className="text-white/75 font-sans text-sm md:text-base mb-10 max-w-xl mx-auto leading-relaxed font-light"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
         >
           Ofereça mais durabilidade e valor às suas peças.
-        </motion.p>
+        </motion.p> */}
 
         <motion.div
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
