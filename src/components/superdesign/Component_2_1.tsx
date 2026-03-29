@@ -33,7 +33,7 @@ function Component_2_1() {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         <motion.div
-          className="inline-block mb-6 py-1 px-4 border border-white/30 rounded-full backdrop-blur-sm"
+          className="inline-block mb-6 py-1 px-4 border border-white/30 rounded-sm backdrop-blur-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
@@ -57,7 +57,8 @@ function Component_2_1() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
         >
-          Desenvolvido por quem trabalha com couro, para manter as peças hidratadas e bem cuidadas ao longo do tempo.        </motion.p>
+          Hidratante e Condicionador de Couro
+        </motion.p>
 
         {/* <motion.p
           className="text-white/75 font-sans text-sm md:text-base mb-10 max-w-xl mx-auto leading-relaxed font-light"
@@ -67,7 +68,7 @@ function Component_2_1() {
         >
           Ofereça mais durabilidade e valor às suas peças.
         </motion.p> */}
-
+        <br/>
         <motion.div
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           initial={{ opacity: 0, y: 20 }}
@@ -78,7 +79,7 @@ function Component_2_1() {
             href={whatsappResaleLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-primary-foreground px-10 py-5 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-primary/90 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
+            className="bg-primary text-primary-foreground px-10 py-5 rounded-sm font-bold text-sm tracking-widest uppercase hover:bg-primary/90 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -88,7 +89,7 @@ function Component_2_1() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white/20 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
+            className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-sm font-bold text-sm tracking-widest uppercase hover:bg-white/20 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -97,12 +98,12 @@ function Component_2_1() {
         </motion.div>
 
         <motion.p
-          className="text-white/50 text-xs mt-6 tracking-wide"
+          className="text-white/70 text-xs mt-6 tracking-wide"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.6 }}
         >
-          Venda direcionada para ateliês e lojas • pedidos a partir de 4 unidades
+          Venda direcionada para ateliês • pedidos a partir de 4 unidades
         </motion.p>
       </motion.div>
 

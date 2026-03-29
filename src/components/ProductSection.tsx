@@ -56,7 +56,7 @@ export function ProductSection() {
                         transition={{ duration: 0.8, delay: 0.15 }}
                     >
                         <div className="relative flex items-center justify-center">
-                            <div className="absolute h-[360px] w-[360px] rounded-full bg-[#dbe6d0]" />
+                            <div className="absolute h-[360px] w-[360px] rounded-sm bg-[#dbe6d0]" />
                             <div className="relative h-[460px] w-[360px] overflow-hidden border border-[#e0d5c1] bg-[#f6f1e9] shadow-[0_20px_60px_-40px_rgba(0,0,0,0.45)]">
                                 <img
                                     src="/balsamo_1.jpg"

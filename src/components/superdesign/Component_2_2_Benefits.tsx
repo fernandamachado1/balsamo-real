@@ -41,7 +41,7 @@ function Component_2_2_Benefits() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <span className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-[#8b7355] flex items-center justify-center">
+              <span className="mt-1 flex-shrink-0 w-5 h-5 rounded-sm bg-[#8b7355] flex items-center justify-center">
                 <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
                   <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>

@@ -2,10 +2,16 @@
 
 import { Button, Form, Input, message } from "antd";
 
+type ContactFormValues = {
+  name: string;
+  email: string;
+  message: string;
+};
+
 export function FormContact() {
   const [form] = Form.useForm();
 
-  const onFinish = async (values: any) => {
+  const onFinish = async (values: ContactFormValues) => {
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",

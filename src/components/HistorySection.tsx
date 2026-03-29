@@ -20,7 +20,7 @@ export function HistorySection() {
             transition={{ duration: 0.8 }}
           >
             <div className="relative flex items-center justify-center">
-              <div className="absolute h-[360px] w-[360px] rounded-full bg-[#dbe6d0]" />
+              <div className="absolute h-[360px] w-[360px] rounded-sm bg-[#dbe6d0]" />
               <div className="relative h-[460px] w-[360px] overflow-hidden border border-[#d5cbb8] bg-[#f6f1e9] shadow-[0_16px_36px_-34px_rgba(0,0,0,0.55)]">
                 <img
                   src="/IMG_5473.jpg"

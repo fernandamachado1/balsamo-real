@@ -67,7 +67,7 @@ function Component_3() {
               href="https://wa.me/5541988691275?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20equipe%20do%20B%C3%A1lsamo%20Real.%20Vim%20pelo%20site."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-full text-[11px] font-bold tracking-[0.16em] uppercase hover:opacity-90 transition-all"
+              className="inline-flex mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-sm text-[11px] font-bold tracking-[0.16em] uppercase hover:opacity-90 transition-all"
             >
               Falar no WhatsApp
             </a>

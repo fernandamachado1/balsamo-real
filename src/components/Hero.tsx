@@ -3,9 +3,10 @@
 import { motion } from "framer-motion";
 import { Typography } from "antd";
 
+const MotionTitle = motion.create(Typography.Title);
+const MotionParagraph = motion.create(Typography.Paragraph);
+
 export function Hero() {
-    const MotionTitle = motion.create(Typography.Title);
-    const MotionParagraph = motion.create(Typography.Paragraph);
     const message = encodeURIComponent(
         "Olá! Quero comprar o Bálsamo Real. Vim pelo site 😊"
     );
@@ -38,13 +39,15 @@ export function Hero() {
                     Bálsamo Real
                 </MotionTitle>
                 <MotionParagraph
-                    className="tracking-[0.25em] uppercase mb-12 !text-white"
+                    className="tracking-[0.12em] mb-12 !text-white"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.4 }}
                     style={subtitleSize}
                 >
-                    Hidratante e Condicionador para Couro
+                    Hidratante para couro.
+                    <br />
+                    Feito para artigos em couro natural.
                 </MotionParagraph>
 
                 <motion.button

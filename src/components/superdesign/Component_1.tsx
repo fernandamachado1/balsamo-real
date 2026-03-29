@@ -42,7 +42,7 @@ function Component_1() {
           href="https://wa.me/5541988691275"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-all shadow-sm hover:shadow-md active:scale-95"
+          className="bg-primary text-primary-foreground px-6 py-2.5 rounded-sm text-sm font-semibold hover:opacity-90 transition-all shadow-sm hover:shadow-md active:scale-95"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.98 }}
         >

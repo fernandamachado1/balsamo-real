@@ -17,7 +17,7 @@ function Component_3_1_1() {
           rel="noopener noreferrer"
           className="group flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors"
         >
-          <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center group-hover:border-primary group-hover:bg-primary/5 transition-all">
+          <div className="w-10 h-10 rounded-sm border border-border flex items-center justify-center group-hover:border-primary group-hover:bg-primary/5 transition-all">
             <svg
               viewBox="0 0 24 24"
               fill="none"
