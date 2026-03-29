@@ -24,9 +24,7 @@ function Component_3() {
             <p className="text-sm text-white/75 font-light leading-relaxed max-w-sm">
               Preservando a beleza e a durabilidade do couro com ingredientes 100% naturais.
             </p>
-            <p className="mt-3 text-xs text-white/45 font-light leading-relaxed max-w-sm tracking-wide">
-              Produto voltado para ateliês e profissionais do couro.
-            </p>
+          
           </div>
 
           <div>
