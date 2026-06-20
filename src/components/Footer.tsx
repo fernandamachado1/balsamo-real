@@ -1,4 +1,7 @@
-function Component_3() {
+import Link from "next/link";
+import { whatsappMessages } from "@/src/lib/catalog";
+
+export function Footer() {
   return (
     <footer
       id="contato"
@@ -24,22 +27,26 @@ function Component_3() {
             <p className="text-sm text-white/75 font-light leading-relaxed max-w-sm">
               Preservando a beleza e a durabilidade do couro com ingredientes 100% naturais.
             </p>
-          
           </div>
 
           <div>
             <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-6">Navegação</h4>
             <ul className="space-y-3">
-                {[
-                  { label: 'Início', href: '#inicio' },
-                  { label: 'Produto', href: '#produto' },
-                  { label: 'Sobre', href: '#sobre' },
-                  { label: 'Revenda', href: '#revenda' }
-                ].map((item) => (
+              {[
+                { label: "Início", href: "#inicio" },
+                { label: "Produto", href: "#produto" },
+                { label: "Catálogo", href: "/catalogo" },
+                { label: "Sobre", href: "#sobre" },
+                { label: "Revenda", href: "#revenda" },
+                { label: "Políticas de compra, envio e troca", href: "/politicas" },
+              ].map((item) => (
                 <li key={item.label}>
-                  <a href={item.href} className="text-sm text-white/75 hover:text-primary transition-colors">
+                  <Link
+                    href={item.href}
+                    className="text-sm text-white/75 hover:text-primary transition-colors"
+                  >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -62,7 +69,7 @@ function Component_3() {
               </a>
             </div>
             <a
-              href="https://wa.me/5541988691275?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20equipe%20do%20B%C3%A1lsamo%20Real.%20Vim%20pelo%20site."
+              href={`https://wa.me/5541988691275?text=${encodeURIComponent(whatsappMessages.general)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-sm text-[11px] font-bold tracking-[0.16em] uppercase hover:opacity-90 transition-all"
@@ -77,6 +84,12 @@ function Component_3() {
             &copy; {new Date().getFullYear()} Bálsamo Real. Todos os direitos reservados.
           </div>
           <div className="flex gap-6">
+            <Link
+              href="/politicas"
+              className="text-[11px] text-white/65 hover:text-primary transition-colors tracking-[0.18em] uppercase font-medium"
+            >
+              Políticas de compra, envio e troca
+            </Link>
             <a
               href="https://www.instagram.com/balsamo.real/"
               target="_blank"
@@ -86,7 +99,7 @@ function Component_3() {
               Instagram
             </a>
             <a
-              href="https://wa.me/5541988691275"
+              href={`https://wa.me/5541988691275?text=${encodeURIComponent(whatsappMessages.general)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[11px] text-white/65 hover:text-primary transition-colors tracking-[0.18em] uppercase font-medium"
@@ -99,5 +112,3 @@ function Component_3() {
     </footer>
   );
 }
-
-export default Component_3;

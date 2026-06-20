@@ -1,3 +1,5 @@
+import { whatsappMessages } from '@/src/lib/catalog';
+
 /**
  * Content for the History section.
  * Focused on artisanal storytelling and clear legibility.
@@ -20,21 +22,18 @@ function Component_2_3_1() {
 
       <div className="space-y-5 text-white/75 text-base leading-relaxed mb-12 font-light">
         <p>
-          O couro é um material natural que, assim como a nossa pele, precisa de cuidado para manter sua flexibilidade, aparência e durabilidade ao longo do tempo.
+          O couro é um material natural e, como toda matéria viva, responde melhor quando recebe cuidado regular.
         </p>
         <p>
-          Desde 2014, já entendíamos a importância da hidratação no dia a dia de quem trabalha com couro. Na época, não encontrávamos um produto realmente natural e seguro no uso, sem odores fortes ou a necessidade de proteção ao aplicar.
+          Foi dessa necessidade que nasceu o Bálsamo Real: uma fórmula simples, pensada para hidratar, nutrir e preservar o couro sem exagero na aplicação.
         </p>
         <p>
-          Foi assim que, em 2015, começamos a desenvolver nosso próprio bálsamo — algo comum entre artesãos que buscam o melhor cuidado para suas peças. Com o passar dos anos, nos unimos a outros artesãos que compartilhavam do mesmo objetivo.
-        </p>
-        <p>
-          Dessa união entre ateliês nasceu o <span className="text-white font-medium">Bálsamo Real</span>, formulado com ingredientes naturais, sem aromatizantes ou químicos agressivos, pensado para o cuidado do couro natural no dia a dia de quem trabalha com o material.
+          Ingredientes naturais, uso simples e foco na rotina de quem trabalha com peças de couro.
         </p>
       </div>
 
       <a
-        href="https://wa.me/5541988691275?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20equipe%20do%20B%C3%A1lsamo%20Real.%20Vim%20pelo%20site."
+        href={`https://wa.me/5541988691275?text=${encodeURIComponent(whatsappMessages.general)}`}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-4 bg-[#8b7355] text-white px-10 py-5 rounded-sm text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#a68b6d] transition-all duration-500 shadow-xl group"

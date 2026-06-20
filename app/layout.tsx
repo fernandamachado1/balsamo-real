@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/src/components/Header";
+import { Footer } from "@/src/components/Footer";
 
 export const metadata: Metadata = {
   title: "Bálsamo Real",
@@ -21,8 +22,8 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body>
         <Header />
-        <main>{children}</main>
-       
+        {children}
+        <Footer />
       </body>
     </html>
   );

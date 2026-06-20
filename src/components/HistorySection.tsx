@@ -2,11 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Typography } from "antd";
+import { whatsappMessages } from "@/src/lib/catalog";
 
 export function HistorySection() {
-  const message = encodeURIComponent(
-    "Olá! Quero falar com a equipe do Bálsamo Real. Vim pelo site."
-  );
+  const message = encodeURIComponent(whatsappMessages.general);
   const whatsappLink = `https://wa.me/5541988691275?text=${message}`;
 
   return (

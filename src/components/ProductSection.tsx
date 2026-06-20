@@ -2,10 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Typography } from "antd";
+import { whatsappMessages } from "@/src/lib/catalog";
 export function ProductSection() {
-    const resaleMessage = encodeURIComponent(
-        "Olá! Tenho interesse em revender o Bálsamo Real. Vim pelo site."
-    );
+    const resaleMessage = encodeURIComponent(whatsappMessages.resale);
     const whatsappResaleLink = `https://wa.me/5541988691275?text=${resaleMessage}`;
 
     return (

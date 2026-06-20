@@ -23,6 +23,7 @@ function Component_1() {
         {[
           { label: 'Início', href: '#inicio' },
           { label: 'Produto', href: '#produto' },
+          { label: 'Catálogo', href: '/catalogo' },
           { label: 'Sobre', href: '#sobre' },
           { label: 'Revenda', href: '#revenda' },
           { label: 'Contato', href: '#contato' },

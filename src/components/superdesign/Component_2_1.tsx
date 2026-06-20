@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { whatsappMessages } from '@/src/lib/catalog';
 
 function Component_2_1() {
-  const resaleMessage = encodeURIComponent("Olá! Tenho interesse em revender o Bálsamo Real. Vim pelo site.");
+  const resaleMessage = encodeURIComponent(whatsappMessages.resale);
   const whatsappResaleLink = `https://wa.me/5541988691275?text=${resaleMessage}`;
-  const whatsappLink = `https://wa.me/5541988691275`;
   const titleSize = { fontSize: "clamp(2.75rem, 2rem + 3vw, 5.5rem)" };
 
   return (
@@ -76,24 +76,22 @@ function Component_2_1() {
           transition={{ duration: 0.7, delay: 0.45 }}
         >
           <motion.a
-            href={whatsappResaleLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/catalogo"
             className="bg-primary text-primary-foreground px-10 py-5 rounded-sm font-bold text-sm tracking-widest uppercase hover:bg-primary/90 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
           >
-            Quero revender
+            Ver kits
           </motion.a>
           <motion.a
-            href={whatsappLink}
+            href={whatsappResaleLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-sm font-bold text-sm tracking-widest uppercase hover:bg-white/20 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
+            className="bg-transparent text-white border border-white/25 px-10 py-5 rounded-sm font-bold text-sm tracking-widest uppercase hover:bg-white/10 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
           >
-            Falar no WhatsApp
+            Quero revender
           </motion.a>
         </motion.div>
 
@@ -103,7 +101,7 @@ function Component_2_1() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.6 }}
         >
-          Venda direcionada para ateliês • pedidos a partir de 4 unidades
+          Kits para uso próprio e revenda • pedidos a partir de 4 unidades
         </motion.p>
       </motion.div>
 

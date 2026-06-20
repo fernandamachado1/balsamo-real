@@ -4,9 +4,14 @@ function Component_3_1() {
       <div className="lg:col-span-1" data-component-id="Component_3_1">
         <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-8">Navegação</h4>
         <ul className="space-y-4">
-          {['Início', 'Loja', 'Sobre', 'Contato'].map(item => (
+          {['Início', 'Loja', 'Catálogo', 'Sobre', 'Contato'].map(item => (
             <li key={item}>
-              <a href={`#${item.toLowerCase()}`} className="text-muted-foreground hover:text-primary transition-colors font-light italic">{item}</a>
+              <a
+                href={item === 'Catálogo' ? '/catalogo' : `#${item.toLowerCase()}`}
+                className="text-muted-foreground hover:text-primary transition-colors font-light italic"
+              >
+                {item}
+              </a>
             </li>
           ))}
         </ul>

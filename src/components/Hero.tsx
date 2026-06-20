@@ -2,14 +2,13 @@
 
 import { motion } from "framer-motion";
 import { Typography } from "antd";
+import { whatsappMessages } from "@/src/lib/catalog";
 
 const MotionTitle = motion.create(Typography.Title);
 const MotionParagraph = motion.create(Typography.Paragraph);
 
 export function Hero() {
-    const message = encodeURIComponent(
-        "Olá! Quero comprar o Bálsamo Real. Vim pelo site 😊"
-    );
+    const message = encodeURIComponent(whatsappMessages.general);
 
     const whatsappLink = `https://wa.me/5541988691275?text=${message}`;
     const titleSize = { fontSize: "clamp(2.75rem, 2rem + 3vw, 5.5rem)" };
