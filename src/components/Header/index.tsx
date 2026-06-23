@@ -46,7 +46,7 @@ export function Header() {
   return (
     <>
       <motion.header
-        className={`w-full px-8 h-16 flex items-center justify-between fixed top-0 left-0 z-50 transition-all duration-300 ${headerSurface}`}
+        className={`w-full px-4 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between fixed top-0 left-0 z-50 transition-all duration-300 ${headerSurface}`}
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -57,7 +57,7 @@ export function Header() {
             alt="Bálsamo Real"
             width={56}
             height={56}
-            className="h-12 w-12 md:h-26 md:w-26 object-contain"
+            className="h-10 w-10 sm:h-12 sm:w-12 md:h-26 md:w-26 object-contain"
             priority
           />
         </Link>
@@ -75,11 +75,11 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-6 text-gray-700">
+        <div className="flex items-center gap-2 sm:gap-4 text-gray-700">
           {pathname === "/" && (
             <Link
               href="/catalogo"
-              className="inline-flex items-center rounded-md bg-white px-3 py-2 text-xs font-semibold text-[#2c2c2c] transition-colors hover:bg-[#f4f1ea] md:px-4 md:text-sm"
+              className="inline-flex items-center rounded-full bg-white px-2.5 py-1.5 text-[11px] font-semibold text-[#2c2c2c] whitespace-nowrap transition-colors hover:bg-[#f4f1ea] sm:rounded-md sm:px-3 sm:py-2 sm:text-xs md:px-4 md:text-sm"
             >
               Catálogo
             </Link>
@@ -89,7 +89,7 @@ export function Header() {
             aria-label="Abrir menu"
             aria-expanded={isMenuOpen}
             onClick={() => setIsMenuOpen((prev) => !prev)}
-            className="md:hidden inline-flex items-center justify-center rounded-md px-3 py-2 text-[#2c2c2c] hover:bg-[#f4f1ea] transition-colors"
+            className="md:hidden inline-flex items-center justify-center rounded-md px-2.5 py-2 text-[#2c2c2c] hover:bg-[#f4f1ea] transition-colors"
           >
             <span className="sr-only">Menu</span>
             <div className="flex flex-col gap-1">
@@ -102,9 +102,10 @@ export function Header() {
             href="https://wa.me/5541988691275"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center rounded-md bg-[#8B7355] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#7a644c]"
+            className="inline-flex items-center rounded-full bg-[#8B7355] px-2.5 py-1.5 text-[11px] font-medium text-white whitespace-nowrap transition-colors hover:bg-[#7a644c] sm:rounded-md sm:px-3 sm:py-2 sm:text-xs md:px-4 md:text-sm"
           >
-            Entre em contato
+            <span className="sm:hidden">Contato</span>
+            <span className="hidden sm:inline">Entre em contato</span>
           </a>
         </div>
       </motion.header>
