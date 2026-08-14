@@ -18,7 +18,7 @@ export function ResaleSection() {
                 className="relative max-w-4xl mx-auto"
             >
                 <div className="text-center">
-                    <Typography.Text className="block uppercase tracking-[0.24em] text-[11px] text-[#7a6b54]">
+                    <Typography.Text className="block tracking-[0.08em] text-[11px] text-[#7a6b54]">
                         Programa de revenda
                     </Typography.Text>
 

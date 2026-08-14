@@ -81,7 +81,7 @@ export default async function KitPage({ params }: PageProps) {
 
           <div className="flex h-full flex-col justify-between gap-8">
             <div className="space-y-5">
-              <div className="flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.16em] text-[#7b7267]">
+              <div className="flex flex-wrap items-center gap-2 text-[11px] tracking-[0.08em] text-[#7b7267]">
                 <span>{product.highlight}</span>
                 <span>{product.units} unidades</span>
               </div>
@@ -90,14 +90,14 @@ export default async function KitPage({ params }: PageProps) {
                 <h1 className="text-[clamp(2rem,1.4rem+1.8vw,3.6rem)] font-semibold leading-[1.02] tracking-[-0.04em]">
                   {product.title}
                 </h1>
-                <p className="mt-2 text-sm uppercase tracking-[0.16em] text-[#7b7267]">
+                <p className="mt-2 text-sm tracking-[0.08em] text-[#7b7267]">
                   Conteúdo: 25g
                 </p>
               </div>
 
               {product.notes?.length ? (
                 <div className="space-y-4 rounded-[4px] border border-[#e1d6c6] bg-[#f7f2e8] px-5 py-5">
-                  <h2 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#7a6248]">
+                  <h2 className="text-[11px] font-semibold tracking-[0.08em] text-[#7a6248]">
                     Sobre este kit
                   </h2>
                   <div className="space-y-3">
@@ -111,7 +111,7 @@ export default async function KitPage({ params }: PageProps) {
               ) : null}
 
               <div>
-                <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#7b7267]">
+                <div className="text-[11px] font-semibold tracking-[0.08em] text-[#7b7267]">
                   Valor do kit
                 </div>
                 <div className="mt-2 text-4xl font-semibold">{formatMoney(product.price)}</div>
@@ -127,14 +127,14 @@ export default async function KitPage({ params }: PageProps) {
                 href={whatsappLink}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-[#7a6248] px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#f4f1ea] transition-colors hover:bg-[#624e3a]"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-[#7a6248] px-5 py-3 text-xs font-semibold tracking-[0.08em] text-[#f4f1ea] transition-colors hover:bg-[#624e3a]"
               >
                 <MessageCircle className="h-4 w-4" />
                 Pedir no WhatsApp
               </a>
               <Link
                 href="/catalogo"
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#1c1714] transition-colors hover:bg-[#f7f2e8]"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-3 text-xs font-semibold tracking-[0.08em] text-[#1c1714] transition-colors hover:bg-[#f7f2e8]"
               >
                 <ArrowRight className="h-4 w-4 rotate-180" />
                 Ver outros kits
@@ -145,7 +145,7 @@ export default async function KitPage({ params }: PageProps) {
 
         <div className="mt-10 space-y-8">
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#7a6248]">
+            <h2 className="text-sm font-semibold tracking-[0.08em] text-[#7a6248]">
               Informações importantes
             </h2>
             <ul className="mt-4 space-y-2 text-sm leading-6 text-[#2b2723]">
@@ -161,7 +161,7 @@ export default async function KitPage({ params }: PageProps) {
           </div>
 
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#7a6248]">
+            <h2 className="text-sm font-semibold tracking-[0.08em] text-[#7a6248]">
               Produção e envio
             </h2>
             <p className="mt-4 text-sm leading-6 text-[#2b2723]">
@@ -176,7 +176,7 @@ export default async function KitPage({ params }: PageProps) {
           </div>
 
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#7a6248]">
+            <h2 className="text-sm font-semibold tracking-[0.08em] text-[#7a6248]">
               Passo a passo de uso
             </h2>
             <div className="mt-4 space-y-4 text-sm leading-6 text-[#2b2723]">

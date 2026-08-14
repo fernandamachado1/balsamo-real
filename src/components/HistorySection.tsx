@@ -59,7 +59,7 @@ export function HistorySection() {
               <div className="max-w-md">
                 <a
                   href={whatsappLink}
-                  className="cta-primary block w-full px-5 py-3 text-center"
+                  className="cta-primary block w-full px-5 py-3 text-center normal-case"
                   target="_blank"
                   rel="noreferrer"
                 >

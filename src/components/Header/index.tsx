@@ -62,7 +62,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-800 tracking-wide">
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-800">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -120,9 +120,9 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm uppercase tracking-[0.2em]"
-                  onClick={() => setIsMenuOpen(false)}
-                >
+                className="text-sm tracking-[0.08em]"
+                onClick={() => setIsMenuOpen(false)}
+              >
                   {link.label}
                 </Link>
               ))}

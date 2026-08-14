@@ -30,7 +30,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-6">Navegação</h4>
+            <h4 className="text-sm font-semibold tracking-wide text-primary mb-6">Navegação</h4>
             <ul className="space-y-3">
               {[
                 { label: "Início", href: "#inicio" },
@@ -53,7 +53,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-6">Contato</h4>
+            <h4 className="text-sm font-semibold tracking-wide text-primary mb-6">Contato</h4>
             <div className="space-y-3 text-sm text-white/75">
               <p>(41) 98869-1275</p>
               <a href="mailto:balsamo.real@gmail.com" className="block hover:text-primary transition-colors">
@@ -72,7 +72,7 @@ export function Footer() {
               href={`https://wa.me/5541988691275?text=${encodeURIComponent(whatsappMessages.general)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-sm text-[11px] font-bold tracking-[0.16em] uppercase hover:opacity-90 transition-all"
+              className="inline-flex mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-sm text-[11px] font-semibold tracking-[0.08em] hover:opacity-90 transition-all"
             >
               Falar no WhatsApp
             </a>
@@ -80,13 +80,13 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/15 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-[11px] text-white/65 tracking-[0.18em] uppercase font-medium">
+          <div className="text-[11px] text-white/65 tracking-[0.08em] font-medium">
             &copy; {new Date().getFullYear()} Bálsamo Real. Todos os direitos reservados.
           </div>
           <div className="flex gap-6">
             <Link
               href="/politicas"
-              className="text-[11px] text-white/65 hover:text-primary transition-colors tracking-[0.18em] uppercase font-medium"
+              className="text-[11px] text-white/65 hover:text-primary transition-colors tracking-[0.08em] font-medium"
             >
               Políticas de compra, envio e troca
             </Link>
@@ -94,7 +94,7 @@ export function Footer() {
               href="https://www.instagram.com/balsamo.real/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[11px] text-white/65 hover:text-primary transition-colors tracking-[0.18em] uppercase font-medium"
+              className="text-[11px] text-white/65 hover:text-primary transition-colors tracking-[0.08em] font-medium"
             >
               Instagram
             </a>
@@ -102,7 +102,7 @@ export function Footer() {
               href={`https://wa.me/5541988691275?text=${encodeURIComponent(whatsappMessages.general)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[11px] text-white/65 hover:text-primary transition-colors tracking-[0.18em] uppercase font-medium"
+              className="text-[11px] text-white/65 hover:text-primary transition-colors tracking-[0.08em] font-medium"
             >
               WhatsApp
             </a>

@@ -2,7 +2,7 @@ function Component_3_1() {
   return (
     <>
       <div className="lg:col-span-1" data-component-id="Component_3_1">
-        <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-8">Navegação</h4>
+        <h4 className="text-sm font-semibold tracking-wide text-primary mb-8">Navegação</h4>
         <ul className="space-y-4">
           {['Início', 'Loja', 'Catálogo', 'Sobre', 'Contato'].map(item => (
             <li key={item}>
@@ -18,7 +18,7 @@ function Component_3_1() {
       </div>
 
       <div className="lg:col-span-1">
-        <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-8">Atendimento</h4>
+        <h4 className="text-sm font-semibold tracking-wide text-primary mb-8">Atendimento</h4>
         <div className="space-y-4 text-muted-foreground font-light leading-relaxed">
           <p>Postagem dos produtos realizada todas as sextas-feiras.</p>
           <p>Suporte via WhatsApp de Segunda a Sexta, das 9h às 18h.</p>

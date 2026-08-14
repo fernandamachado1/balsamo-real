@@ -36,7 +36,7 @@ export default function CatalogoPage() {
         </div>
 
         <div className="max-w-3xl">
-          <span className="inline-flex items-center px-0 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#7a6248]">
+          <span className="inline-flex items-center px-0 text-[11px] font-semibold tracking-[0.08em] text-[#7a6248]">
             Catálogo
           </span>
           <h1 className="mt-5 text-[clamp(2.2rem,1.4rem+2.2vw,4rem)] font-semibold leading-[1.02] tracking-[-0.035em]">
@@ -52,14 +52,14 @@ export default function CatalogoPage() {
             href={introLink}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-[#7a6248] px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#f4f1ea] transition-colors hover:bg-[#624e3a]"
+            className="inline-flex items-center justify-center gap-2 rounded-md bg-[#7a6248] px-5 py-3 text-xs font-semibold tracking-[0.08em] text-[#f4f1ea] transition-colors hover:bg-[#624e3a]"
           >
             <MessageCircle className="h-4 w-4" />
             Pedir no WhatsApp
           </a>
           <Link
             href="/"
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#1c1714] transition-colors hover:bg-[#f7f2e8]"
+            className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-3 text-xs font-semibold tracking-[0.08em] text-[#1c1714] transition-colors hover:bg-[#f7f2e8]"
           >
             Ir para a página inicial
           </Link>
@@ -85,7 +85,7 @@ export default function CatalogoPage() {
 
               <div className="flex flex-col justify-between gap-6 px-6 py-6 sm:px-8 sm:py-8 lg:px-9">
                 <div className="space-y-5">
-                  <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.16em] text-[#7b7267]">
+                  <div className="flex items-center gap-3 text-[11px] tracking-[0.08em] text-[#7b7267]">
                     <span>{kit.highlight}</span>
                     <span>{kit.units} unidades</span>
                   </div>
@@ -98,7 +98,7 @@ export default function CatalogoPage() {
                   </div>
 
                   <div>
-                    <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#7b7267]">
+                    <div className="text-[11px] font-semibold tracking-[0.08em] text-[#7b7267]">
                       Valor do kit
                     </div>
                     <div className="mt-2 text-3xl font-semibold">{formatMoney(kit.price)}</div>
@@ -111,7 +111,7 @@ export default function CatalogoPage() {
                 <div className="flex flex-wrap gap-3">
                   <Link
                     href={`/catalogo/${kit.slug}`}
-                    className="inline-flex items-center justify-center gap-2 rounded-[8px] bg-white px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#1c1714] transition-colors hover:bg-[#f4ede3]"
+                    className="inline-flex items-center justify-center gap-2 rounded-[8px] bg-white px-4 py-3 text-xs font-semibold tracking-[0.08em] text-[#1c1714] transition-colors hover:bg-[#f4ede3]"
                   >
                     Ver detalhes
                     <ArrowRight className="h-4 w-4" />
@@ -122,7 +122,7 @@ export default function CatalogoPage() {
                     )}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-[8px] bg-[#7a6248] px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#f4f1ea] transition-colors hover:bg-[#624e3a]"
+                    className="inline-flex items-center justify-center gap-2 rounded-[8px] bg-[#7a6248] px-4 py-3 text-xs font-semibold tracking-[0.08em] text-[#f4f1ea] transition-colors hover:bg-[#624e3a]"
                   >
                     WhatsApp
                   </a>

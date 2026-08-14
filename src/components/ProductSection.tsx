@@ -39,7 +39,7 @@ export function ProductSection() {
                             <div className="max-w-md space-y-3">
                                 <a
                                     href={whatsappResaleLink}
-                                    className="cta-primary block w-full px-5 py-3 text-center"
+                                    className="cta-primary block w-full px-5 py-3 text-center normal-case"
                                     target="_blank"
                                     rel="noreferrer"
                                 >

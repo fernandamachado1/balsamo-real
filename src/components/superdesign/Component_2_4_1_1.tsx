@@ -4,7 +4,7 @@ function Component_2_4_1_1() {
       className="max-w-[576px] caret-neutral-900 mb-8 pt-4 border-[#e3d8c8] border-t"
       data-component-id="Component_2_4_1_1"
     >
-      <span className="text-[rgba(0,0,0,0.88)] leading-[1.57143] text-[14px] tracking-[2.8px] uppercase [word-break:break-word] block caret-[rgba(0,0,0,0.88)] mb-4">
+      <span className="text-[rgba(0,0,0,0.88)] leading-[1.57143] text-[14px] tracking-[0.08em] [word-break:break-word] block caret-[rgba(0,0,0,0.88)] mb-4">
         Como funciona
       </span>
       <ul className="text-[#4a4a4a] caret-[#4a4a4a] my-0 pl-5">

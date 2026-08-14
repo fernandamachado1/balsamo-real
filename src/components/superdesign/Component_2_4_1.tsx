@@ -12,7 +12,7 @@ function Component_2_4_1() {
     >
       <div className="flex items-center gap-3 mb-8">
         <span className="h-[1px] w-12 bg-[#8b7355]"></span>
-        <span className="text-[#8b7355] text-xs font-bold tracking-[0.3em] uppercase">Parceria Profissional</span>
+        <span className="text-[#8b7355] text-xs font-semibold tracking-[0.08em]">Parceria profissional</span>
       </div>
 
       <h2 className="text-[#1f1a14] font-serif text-3xl md:text-4xl lg:text-5xl mb-8 leading-[1.1] tracking-tight">
@@ -30,13 +30,13 @@ function Component_2_4_1() {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-6">
-      <a
+        <a
           href={`https://wa.me/5541988691275?text=${encodeURIComponent(whatsappMessages.resale)}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center bg-[#8b7355] text-white px-10 py-5 rounded-sm text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#a68b6d] transition-all duration-500 shadow-xl"
+          className="inline-flex items-center justify-center bg-[#8b7355] text-white px-10 py-5 rounded-sm text-xs font-semibold tracking-[0.08em] hover:bg-[#a68b6d] transition-all duration-500 shadow-xl"
         >
-          Quero Revender
+          Quero revender
         </a>
       </div>
     </div>

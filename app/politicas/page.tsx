@@ -62,7 +62,7 @@ export default function PoliticasPage() {
         </div>
 
         <div className="mt-8 max-w-3xl">
-          <span className="inline-flex items-center text-[11px] font-semibold uppercase tracking-[0.22em] text-[#7a6248]">
+          <span className="inline-flex items-center text-[11px] font-semibold tracking-[0.08em] text-[#7a6248]">
             Políticas
           </span>
           <h1 className="mt-5 text-[clamp(2.2rem,1.4rem+2.2vw,4rem)] font-semibold leading-[1.02] tracking-[-0.035em]">
@@ -73,7 +73,7 @@ export default function PoliticasPage() {
         <div className="mt-14 space-y-10">
           {sections.map((section) => (
             <section key={section.id} id={section.id} className="border-t border-[#ded2c0] pt-8">
-              <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#7a6248]">
+              <h2 className="text-sm font-semibold tracking-[0.08em] text-[#7a6248]">
                 {section.title}
               </h2>
               <p className="mt-4 max-w-3xl text-sm leading-7 text-[#2b2723]">{section.text}</p>
@@ -84,7 +84,7 @@ export default function PoliticasPage() {
         <div className="mt-14 flex flex-wrap gap-3 border-t border-[#ded2c0] pt-8">
           <Link
             href="/catalogo"
-            className="inline-flex items-center gap-2 rounded-md bg-white px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#1c1714] transition-colors hover:bg-[#f7f2e8]"
+            className="inline-flex items-center gap-2 rounded-md bg-white px-4 py-3 text-xs font-semibold tracking-[0.08em] text-[#1c1714] transition-colors hover:bg-[#f7f2e8]"
           >
             <ArrowRight className="h-4 w-4 rotate-180" />
             Voltar ao catálogo

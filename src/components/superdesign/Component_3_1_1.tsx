@@ -2,7 +2,7 @@ function Component_3_1_1() {
   return (
     <div className="space-y-8" data-component-id="Component_3_1_1">
       <div>
-        <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-8">Contato</h4>
+        <h4 className="text-sm font-semibold tracking-wide text-primary mb-8">Contato</h4>
         <div className="text-muted-foreground font-light italic space-y-2">
           <p>(41) 98869-1275</p>
           <p>balsamo.real@gmail.com</p>
@@ -10,7 +10,7 @@ function Component_3_1_1() {
       </div>
       
       <div>
-        <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-4">Siga-nos</h4>
+        <h4 className="text-sm font-semibold tracking-wide text-primary mb-4">Siga-nos</h4>
         <a
           href="https://www.instagram.com/balsamo.real/"
           target="_blank"
@@ -32,7 +32,7 @@ function Component_3_1_1() {
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
           </div>
-          <span className="text-sm font-medium tracking-wide uppercase">Instagram</span>
+          <span className="text-sm font-medium tracking-wide">Instagram</span>
         </a>
       </div>
     </div>

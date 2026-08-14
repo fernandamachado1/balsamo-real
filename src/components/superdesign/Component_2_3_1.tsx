@@ -12,7 +12,7 @@ function Component_2_3_1() {
     >
       <div className="flex items-center gap-3 mb-8">
         <span className="h-[1px] w-12 bg-[#8b7355]"></span>
-        <span className="text-[#8b7355] text-xs font-bold tracking-[0.3em] uppercase">Nossa história</span>
+        <span className="text-[#8b7355] text-xs font-semibold tracking-[0.08em]">Nossa história</span>
       </div>
 
       <h2 className="text-white font-serif text-3xl md:text-4xl lg:text-5xl mb-8 leading-[1.1] tracking-tight">
@@ -36,7 +36,7 @@ function Component_2_3_1() {
         href={`https://wa.me/5541988691275?text=${encodeURIComponent(whatsappMessages.general)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-4 bg-[#8b7355] text-white px-10 py-5 rounded-sm text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#a68b6d] transition-all duration-500 shadow-xl group"
+        className="inline-flex items-center gap-4 bg-[#8b7355] text-white px-10 py-5 rounded-sm text-xs font-semibold tracking-[0.08em] hover:bg-[#a68b6d] transition-all duration-500 shadow-xl group"
       >
         Falar no WhatsApp
         <svg

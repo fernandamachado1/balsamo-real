@@ -29,7 +29,7 @@ export function Hero() {
 
             <div className="absolute inset-x-0 bottom-20 md:bottom-24 z-10 flex flex-col items-center text-center text-white px-6">
                 <MotionTitle
-                    className="tracking-[0.25em] mb-6 !text-white !mt-0"
+                    className="tracking-[0.08em] mb-6 !text-white !mt-0"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
@@ -38,7 +38,7 @@ export function Hero() {
                     Bálsamo Real
                 </MotionTitle>
                 <MotionParagraph
-                    className="tracking-[0.12em] mb-12 !text-white"
+                    className="tracking-[0.02em] mb-12 !text-white"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.4 }}
@@ -51,7 +51,7 @@ export function Hero() {
 
                 <motion.button
                     onClick={() => window.open(whatsappLink, "_blank")}
-                    className="cta-primary px-10 py-4 text-xs md:text-sm font-medium"
+                    className="cta-primary px-10 py-4 text-xs md:text-sm font-medium normal-case"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.6 }}

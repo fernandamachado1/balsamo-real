@@ -15,7 +15,7 @@ export function FooterContact() {
         <Typography.Paragraph className="text-[#4a4a4a] leading-relaxed font-light mb-8" style={bodySize}>
           Tire suas dúvidas, peça uma recomendação ou faça seu pedido direto com nossa equipe.
         </Typography.Paragraph>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-xs tracking-[0.25em] uppercase text-[#2c2c2c]">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-xs tracking-[0.08em] text-[#2c2c2c]">
           <Typography.Text className="border-b border-[#2c2c2c] pb-2 text-inherit">
             contato@balsamoreal.com
           </Typography.Text>

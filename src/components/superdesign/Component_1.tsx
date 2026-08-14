@@ -31,7 +31,7 @@ function Component_1() {
           <a
             key={item.label}
             href={item.href}
-            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors tracking-wide uppercase"
+            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors tracking-wide"
           >
             {item.label}
           </a>
@@ -43,7 +43,7 @@ function Component_1() {
           href="https://wa.me/5541988691275"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-primary text-primary-foreground px-6 py-2.5 rounded-sm text-sm font-semibold hover:opacity-90 transition-all shadow-sm hover:shadow-md active:scale-95"
+          className="bg-primary text-primary-foreground px-6 py-2.5 rounded-sm text-sm font-semibold tracking-[0.04em] hover:opacity-90 transition-all shadow-sm hover:shadow-md active:scale-95"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.98 }}
         >

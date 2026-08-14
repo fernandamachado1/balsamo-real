@@ -8,7 +8,7 @@ function Component_2_2_1() {
     >
       <div className="flex items-center gap-2 mb-6">
         <div className="h-px w-8 bg-primary"></div>
-        <span className="text-primary text-xs font-bold tracking-[0.2em] uppercase">Uso prático e direto</span>
+        <span className="text-primary text-xs font-semibold tracking-[0.08em]">Uso prático e direto</span>
       </div>
 
       <h2 className="text-foreground font-serif text-3xl md:text-4xl lg:text-5xl mb-8 leading-tight">
@@ -30,7 +30,7 @@ function Component_2_2_1() {
       <div className="flex flex-col sm:flex-row gap-4">
         <Link
           href="/catalogo"
-          className="bg-primary text-primary-foreground px-8 py-4 rounded-sm text-sm font-bold tracking-widest uppercase text-center hover:opacity-90 transition-all shadow-lg"
+          className="bg-primary text-primary-foreground px-8 py-4 rounded-sm text-sm font-semibold tracking-[0.08em] text-center hover:opacity-90 transition-all shadow-lg"
         >
           Ver kits
         </Link>

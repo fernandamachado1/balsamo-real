@@ -38,11 +38,11 @@ function Component_2_1() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
         >
-          <span className="text-white text-xs font-bold tracking-[0.3em] uppercase">Feito por artesãos</span>
+          <span className="text-white text-xs font-semibold tracking-[0.08em]">Feito por artesãos</span>
         </motion.div>
 
         <motion.h1
-          className="tracking-[0.25em] mb-6 !text-white !mt-0"
+          className="tracking-[0.08em] mb-6 !text-white !mt-0"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
@@ -52,7 +52,7 @@ function Component_2_1() {
         </motion.h1>
 
         <motion.p
-          className="text-white/90 font-sans text-base md:text-xl mb-4 max-w-2xl mx-auto leading-relaxed font-light tracking-wide italic"
+          className="text-white/90 font-sans text-base md:text-xl mb-4 max-w-2xl mx-auto leading-relaxed font-light tracking-normal italic"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
@@ -77,7 +77,7 @@ function Component_2_1() {
         >
           <motion.a
             href="/catalogo"
-            className="bg-primary text-primary-foreground px-10 py-5 rounded-sm font-bold text-sm tracking-widest uppercase hover:bg-primary/90 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
+            className="bg-primary text-primary-foreground px-10 py-5 rounded-sm font-semibold text-sm tracking-[0.08em] hover:bg-primary/90 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -87,7 +87,7 @@ function Component_2_1() {
             href={whatsappResaleLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-transparent text-white border border-white/25 px-10 py-5 rounded-sm font-bold text-sm tracking-widest uppercase hover:bg-white/10 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
+            className="bg-transparent text-white border border-white/25 px-10 py-5 rounded-sm font-semibold text-sm tracking-[0.08em] hover:bg-white/10 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -95,14 +95,6 @@ function Component_2_1() {
           </motion.a>
         </motion.div>
 
-        <motion.p
-          className="text-white/70 text-xs mt-6 tracking-wide"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.6 }}
-        >
-          Kits para uso próprio e revenda • pedidos a partir de 4 unidades
-        </motion.p>
       </motion.div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
